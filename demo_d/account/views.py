@@ -1,7 +1,17 @@
 from django.shortcuts import render, redirect
 from .forms import SignUpForm, LoginForm
 from django.contrib.auth import authenticate, login
-
+from django.shortcuts import render, redirect  # noqa: disable=f401
+from django.urls import reverse_lazy
+from django.views import generic
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic.detail import DetailView
+from .forms import SignUpForm
+from django.contrib.auth import login
+from .forms import UpdateProfileForm
+from account.models import User
+from django.shortcuts import get_object_or_404
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
@@ -14,37 +24,34 @@ def learn(request):
 def admin(request):
     return render(request,'admin.html')
 
-def register(request):
-    msg = None
-    if request.method == 'POST':
-        form = SignUpForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            msg = 'User Created'
-            return redirect ('login')
-        else:
-            msg = 'Form Is Not Valid'
-    else:
-        form = SignUpForm()
-        return render(request,'account/register.html', {'form': form, 'msg': msg})
+class SignUpView(generic.CreateView):
+    form_class = SignUpForm
+    success_url = reverse_lazy('main_page')
+    template_name = 'traveller/signup.html'
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        login(self.request, self.object)
+        return response
     
 
-def login(request):
-    form = LoginForm(request.POST or None)
-    msg = None
+class ProfileView(LoginRequiredMixin, generic.TemplateView):
+    template_name = 'account/profile.html'
+
+
+class ProfileDetailView(DetailView):
+    model = User
+    template_name = 'account/profile.html'
+    context_object_name = 'user'
+
+
+def update_profile(request):
     if request.method == 'POST':
+        form = UpdateProfileForm(request.POST, request.FILES, instance=request.user)
         if form.is_valid():
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
-            user = authenticate(username=username, password=password)
-            if user is not None and user.is_admin:
-                login(request, user)
-                return redirect('adminpage')
-            elif user is not None and user.is_user:
-                login(request, user)
-                return redirect('customer')
-            else:
-                msg= 'invalid credentials'
-        else:
-            msg = 'error validating form'
-    return render(request, 'account/login.html', {'form': form, 'msg': msg})
+            form.save()
+            return redirect('profile', pk=request.user.id)
+    else:
+        form = UpdateProfileForm(instance=request.user)
+
+    return render(request, 'account/update_profile.html', {'form': form})
