@@ -5,7 +5,7 @@ from django.core.validators import MinLengthValidator, MaxLengthValidator, MinVa
 
 # Create your models here.
 
-class User(AbstractUser):
+class CustomUser(AbstractUser):
     first_name = models.CharField('first_name', max_length=35)
     last_name = models.CharField('last_name', max_length=35)
     phone_number = models.CharField(
@@ -15,8 +15,8 @@ class User(AbstractUser):
             MaxLengthValidator(12)
         ]
     )
-    email = models.EmailField(db_index=True, unique=True)
+    email = models.EmailField(blank=True, null=True, db_index=True, unique=True)
     image = models.FileField(upload_to='profile_images/', default='/media/samples/sample.jpeg')
 
     def __str__(self) -> str:
-        return f"User({self.email})"
+        return f"CustomUser({self.username})"

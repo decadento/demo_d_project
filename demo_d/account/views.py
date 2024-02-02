@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import SignUpForm, LoginForm
+from .forms import SignUpForm
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect  # noqa: disable=f401
 from django.urls import reverse_lazy
@@ -7,9 +7,8 @@ from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.detail import DetailView
 from .forms import SignUpForm
-from django.contrib.auth import login
 from .forms import UpdateProfileForm
-from account.models import User
+from account.models import CustomUser
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.decorators import login_required
 
@@ -27,7 +26,7 @@ def admin(request):
 class SignUpView(generic.CreateView):
     form_class = SignUpForm
     success_url = reverse_lazy('main_page')
-    template_name = 'traveller/signup.html'
+    template_name = 'account/signup.html'
 
     def form_valid(self, form):
         response = super().form_valid(form)
@@ -40,7 +39,7 @@ class ProfileView(LoginRequiredMixin, generic.TemplateView):
 
 
 class ProfileDetailView(DetailView):
-    model = User
+    model = CustomUser
     template_name = 'account/profile.html'
     context_object_name = 'user'
 
