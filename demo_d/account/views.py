@@ -1,16 +1,9 @@
 from django.shortcuts import render, redirect
-from .forms import SignUpForm
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect  # noqa: disable=f401
-from django.urls import reverse_lazy
-from django.views import generic
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic.detail import DetailView
-from .forms import SignUpForm
-from .forms import UpdateProfileForm
-from account.models import CustomUser
-from django.shortcuts import get_object_or_404
-from django.contrib.auth.decorators import login_required
+from .forms import UserCreationForm, LoginForm, User
+
+
 
 # Create your views here.
 
@@ -20,37 +13,40 @@ def index(request):
 def learn(request):
     return render(request, 'main/learn.html')
 
-def admin(request):
-    return render(request,'admin.html')
 
-class SignUpView(generic.CreateView):
-    form_class = SignUpForm
-    success_url = reverse_lazy('main_page')
-    template_name = 'account/signup.html'
-
-    def form_valid(self, form):
-        response = super().form_valid(form)
-        login(self.request, self.object)
-        return response
-    
-
-class ProfileView(LoginRequiredMixin, generic.TemplateView):
-    template_name = 'account/profile.html'
-
-
-class ProfileDetailView(DetailView):
-    model = CustomUser
-    template_name = 'account/profile.html'
-    context_object_name = 'user'
-
-
-def update_profile(request):
+# signup page
+def user_signup(request):
     if request.method == 'POST':
-        form = UpdateProfileForm(request.POST, request.FILES, instance=request.user)
+        form = UserCreationForm(request.POST)
         if form.is_valid():
-            form.save()
-            return redirect('profile', pk=request.user.id)
+            # Перевірка унікальності нікнейму
+            username = form.cleaned_data['username']
+            if User.objects.filter(username=username).exists():
+                form.add_error('username', 'Цей нікнейм вже зайнятий. Спробуйте інший.')
+            else:
+                form.save()
+                return redirect('login')
     else:
-        form = UpdateProfileForm(instance=request.user)
+        form = UserCreationForm()
+    return render(request, 'account/signup.html', {'form': form})
 
-    return render(request, 'account/update_profile.html', {'form': form})
+    
+# login page
+def user_login(request):
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(request, username=username, password=password)
+            if user:
+                login(request, user)    
+                return redirect('landing')
+    else:
+        form = LoginForm()
+    return render(request, 'account/login.html', {'form': form})
+
+# logout page
+def user_logout(request):
+    logout(request)
+    return redirect('login')
