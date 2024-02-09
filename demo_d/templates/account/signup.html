@@ -1,42 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Form</title>
-
-    <!-- Включення CSS стилів у вигляді одного файлу -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-</head>
-<body>
-    <div class="signup-container">
-        <form method="POST" class="signup-form">
-            {% csrf_token %}
-           
-            <div class="form-group">
-                <label for="id_username">Username:</label>
-                {{ form.username }}
-            </div>
-            <div class="form-group">
-                <label for="id_password1">Password:</label>
-                {{ form.password1 }}
-            </div>
-            <div class="form-group">
-                <label for="id_password2">Confirm Password:</label>
-                {{ form.password2 }}
-            </div>
-            <button type="submit" class="btn btn-primary">Signup</button>
-            <p class="login-link">Already have an account? <a href="{% url 'login' %}">Login</a></p>
-        </form>
-        <div class="logo-container">
-            <img src="/media/samples/ps_ico.ico" alt="Logo" class="logo">
-        </div>
-    </div>
-</body>
-</html>
+{% extends "main/base.html" %}
 
 
+{% block extra_css %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 <style>
     body {
         background-color: #f8f9fa;
@@ -90,3 +58,34 @@
     }
     
 </style>
+{% endblock %}
+
+{% block content %}
+
+    <div class="signup-container">
+        <form method="POST" class="signup-form">
+            {% csrf_token %}
+           
+            <div class="form-group">
+                <label for="id_username">Username:</label>
+                {{ form.username }}
+            </div>
+            <div class="form-group">
+                <label for="id_password1">Password:</label>
+                {{ form.password1 }}
+            </div>
+            <div class="form-group">
+                <label for="id_password2">Confirm Password:</label>
+                {{ form.password2 }}
+            </div>
+            <button type="submit" class="btn btn-primary">Signup</button>
+            <p class="login-link">Already have an account? <a href="{% url 'login' %}">Login</a></p>
+        </form>
+        <div class="logo-container">
+            <img src="/media/samples/ps_ico.ico" alt="Logo" class="logo">
+        </div>
+    </div>
+
+
+{% endblock %}
+
