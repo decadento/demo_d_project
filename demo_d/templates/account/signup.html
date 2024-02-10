@@ -7,7 +7,7 @@
 
 <style>
     body {
-        background-color: #f8f9fa;
+        background: linear-gradient(to bottom, #222222, #e5e5e6) !important;
         font-family: 'Montserrat', sans-serif;
         margin: 0;
     }
@@ -30,6 +30,18 @@
     
     .form-group {
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column; /* Вирівнювання елементів у вертикальному напрямку */
+    }
+
+    .form-group label {
+        margin-bottom: 5px; /* Додатковий відступ між лейблом і полем вводу */
+    }
+    
+    .form-group input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
     
     .btn-primary {
@@ -58,6 +70,7 @@
     }
     
 </style>
+
 {% endblock %}
 
 {% block content %}
