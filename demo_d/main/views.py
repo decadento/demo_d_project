@@ -8,3 +8,6 @@ def index(request):
 
 def learn(request):
     return render(request, 'main/learn.html')
+
+def categories(request):
+    return render(request, 'main/categories.html')
