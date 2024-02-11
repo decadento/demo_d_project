@@ -1,6 +1,5 @@
 {% extends "main/base.html" %}
 
-
 {% block extra_css %}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -13,18 +12,20 @@
     
     .login-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
     }
     
     .login-form {
+        width: 80%; /* Встановлює ширину форми відсотковим значенням */
         max-width: 400px;
         padding: 20px;
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        margin-right: 20px;
+        margin-bottom: 20px; /* Додатковий відступ між формою та іконкою */
     }
     
     .form-group {
@@ -46,7 +47,7 @@
     .btn-primary {
         background-color: #007bff;
         border-color: #007bff;
-        width: 300px;
+        width: 100%; /* Розтягує кнопку на всю ширину контейнера */
     }
     
     .btn-primary:hover {
@@ -56,6 +57,7 @@
     
     .signup-link {
         margin-top: 15px;
+        text-align: center; /* Вирівнює текст у центрі при зменшенні екрану */
     }
     
     .logo-container {
@@ -63,11 +65,9 @@
     }
     
     .logo {
-        height: 100%;
-        width: auto;
+        width: 100%; /* Розтягує іконку на всю ширину контейнера */
         border-radius: 10px;
     }
-    
 </style>
 
 {% endblock %}
