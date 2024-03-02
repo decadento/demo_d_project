@@ -10944,11 +10944,12 @@ p {
   }
 }
 header.masthead {
+  
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("/media/samples/tree.jpg");
+  background-image: url("/media/samples/mount.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

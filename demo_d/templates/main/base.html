@@ -35,28 +35,31 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        
                         {% if user.is_authenticated %}
-                        
-                        <li class="nav-item"><a class="nav-link" href="{% url 'landing' %}">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'learn' %}">Tests</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'learn' %}">Learn</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Log Out</a></li>
-                        
+                        <li class="nav-item"><a class="nav-link" style="color: #ffc800;" href="{% url 'landing' %}">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #ffc800;" href="{% url 'learn' %}">Tests</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #ffc800;" href="{% url 'learn' %}">Learn</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #ffc800;" href="{% url 'logout' %}">Log Out</a></li>
                         {% else %}
-
-                        <li class="nav-item"><a class="nav-link" href="{% url 'landing' %}">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'learn' %}">Learn</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'signup' %}">Sign-Up</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Log-In</a></li>
-
+                        <li class="nav-item"><a class="nav-link" style="color: #ffc800;" href="{% url 'landing' %}">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #ffc800;" href="{% url 'learn' %}">Learn</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #ffc800;" href="{% url 'signup' %}">Sign-Up</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #ffc800;" href="{% url 'login' %}">Log-In</a></li>
                         {% endif %}
                     </ul>
                 </div>
             </div>
         </nav>
+        
 
         <body>
+        
+            <header class="masthead">
+                <div class="container">
+                    <div class="masthead-heading text-uppercase">PREPFORCE</div>
+                </div>
+              </header>
+
         {% block content %}
         {% endblock %}
         </body>
