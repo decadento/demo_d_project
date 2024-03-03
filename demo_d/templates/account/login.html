@@ -99,9 +99,14 @@
                 <label for="id_password">Password:</label>
                 {{ form.password }}
             </div>
+            {% if form.non_field_errors %}
+            <div class="error-message" style="color: red;">{{ form.non_field_errors.0 }}</div>
+            {% endif %}
             <button type="submit" class="btn btn-primary">Log-in</button>
             <p class="signup-link">Don't have an account? <a href="{% url 'signup' %}">Create one</a></p>
         </form>
+        
+        
         
     </div>
 
