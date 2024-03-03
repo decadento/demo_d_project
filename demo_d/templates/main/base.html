@@ -19,6 +19,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         
         {% block extra_css %}
+
+        <style>
+        header.masthead {
+            background-image: url("/media/samples/mount.jpg");
+          }
+        </style>
         {% endblock %}
         {% load static %}
         <link rel="stylesheet" href= {% static 'css/styles.css' %} />
@@ -58,7 +64,7 @@
                 <div class="container">
                     <div class="masthead-heading text-uppercase">PREPFORCE</div>
                 </div>
-              </header>
+            </header>
 
         {% block content %}
         {% endblock %}

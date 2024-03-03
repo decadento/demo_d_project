@@ -15,7 +15,6 @@ class LoginForm(forms.Form):
 
 
 
-
 class UpdateProfileForm(forms.ModelForm):
     class Meta:
         model = User
