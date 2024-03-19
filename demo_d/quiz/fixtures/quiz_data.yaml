@@ -1,0 +1,457 @@
+-   model: quiz.quiz
+    pk: 1
+    fields:
+      name: AT-4 Grenade Launcher Training
+-   model: quiz.question
+    pk: 1
+    fields:
+      quiz: 1
+      text: What is the primary purpose of the AT-4 grenade launcher?
+-   model: quiz.answer
+    pk: 1
+    fields:
+      question: 1
+      text: To destroy armored targets
+      is_correct: false
+-   model: quiz.answer
+    pk: 2
+    fields:
+      question: 1
+      text: To provide fire support against fortified positions
+      is_correct: false
+-   model: quiz.answer
+    pk: 3
+    fields:
+      question: 1
+      text: To incapacitate enemy personnel with explosive force
+      is_correct: true
+-   model: quiz.answer
+    pk: 4
+    fields:
+      question: 1
+      text: To breach obstacles and create avenues of approach
+      is_correct: false
+-   model: quiz.question
+    pk: 6
+    fields:
+      quiz: 1
+      text: What is the maximum effective range of the AT-4 grenade launcher?
+-   model: quiz.answer
+    pk: 21
+    fields:
+      question: 6
+      text: 300 meters
+      is_correct: false
+-   model: quiz.answer
+    pk: 22
+    fields:
+      question: 6
+      text: 500 meters
+      is_correct: false
+-   model: quiz.answer
+    pk: 23
+    fields:
+      question: 6
+      text: 200 meters
+      is_correct: false
+-   model: quiz.answer
+    pk: 24
+    fields:
+      question: 6
+      text: 400 meters
+      is_correct: true
+-   model: quiz.question
+    pk: 7
+    fields:
+      quiz: 1
+      text: Which type of ammunition does the AT-4 primarily use?
+-   model: quiz.answer
+    pk: 25
+    fields:
+      question: 7
+      text: High-explosive anti-tank (HEAT)
+      is_correct: true
+-   model: quiz.answer
+    pk: 26
+    fields:
+      question: 7
+      text: Fragmentation
+      is_correct: false
+-   model: quiz.answer
+    pk: 27
+    fields:
+      question: 7
+      text: Incendiary
+      is_correct: false
+-   model: quiz.answer
+    pk: 28
+    fields:
+      question: 7
+      text: Smoke
+      is_correct: false
+-   model: quiz.question
+    pk: 8
+    fields:
+      quiz: 1
+      text: What is the primary advantage of the disposable AT-4 launcher system?
+-   model: quiz.answer
+    pk: 29
+    fields:
+      question: 8
+      text: Reusability for multiple engagements
+      is_correct: false
+-   model: quiz.answer
+    pk: 30
+    fields:
+      question: 8
+      text: Ability to reload and fire rapidly
+      is_correct: false
+-   model: quiz.answer
+    pk: 31
+    fields:
+      question: 8
+      text: Lightweight and portable design
+      is_correct: true
+-   model: quiz.answer
+    pk: 32
+    fields:
+      question: 8
+      text: Enhanced accuracy and range
+      is_correct: false
+-   model: quiz.question
+    pk: 9
+    fields:
+      quiz: 1
+      text: What safety precautions should be taken when handling the AT-4 grenade launcher?
+-   model: quiz.answer
+    pk: 33
+    fields:
+      question: 9
+      text: Always point the launcher in a safe direction
+      is_correct: true
+-   model: quiz.answer
+    pk: 34
+    fields:
+      question: 9
+      text: Keep fingers away from the trigger until ready to fire
+      is_correct: true
+-   model: quiz.answer
+    pk: 35
+    fields:
+      question: 9
+      text: Ensure the launcher is clear of obstructions before firing
+      is_correct: true
+-   model: quiz.answer
+    pk: 36
+    fields:
+      question: 9
+      text: Never fire the launcher near flammable materials
+      is_correct: true
+-   model: quiz.question
+    pk: 10
+    fields:
+      quiz: 1
+      text: What is the intended deployment role of the AT-4 within infantry squads?
+-   model: quiz.answer
+    pk: 37
+    fields:
+      question: 10
+      text: Close-quarters combat (CQC)
+      is_correct: false
+-   model: quiz.answer
+    pk: 38
+    fields:
+      question: 10
+      text: Anti-armor support
+      is_correct: true
+-   model: quiz.answer
+    pk: 39
+    fields:
+      question: 10
+      text: Reconnaissance and surveillance
+      is_correct: false
+-   model: quiz.answer
+    pk: 40
+    fields:
+      question: 10
+      text: Communications and logistics
+      is_correct: false
+
+
+
+
+
+-   model: quiz.quiz
+    pk: 2
+    fields:
+      name: Basic Tactics of Combat
+-   model: quiz.question
+    pk: 11
+    fields:
+      quiz: 2
+      text: What is the primary objective of reconnaissance in combat?
+-   model: quiz.answer
+    pk: 41
+    fields:
+      question: 11
+      text: To gather information about enemy positions and movements
+      is_correct: true
+-   model: quiz.answer
+    pk: 42
+    fields:
+      question: 11
+      text: To engage enemy forces directly
+      is_correct: false
+-   model: quiz.answer
+    pk: 43
+    fields:
+      question: 11
+      text: To provide medical support to injured soldiers
+      is_correct: false
+-   model: quiz.answer
+    pk: 44
+    fields:
+      question: 11
+      text: To deliver supplies to frontline units
+      is_correct: false
+-   model: quiz.question
+    pk: 12
+    fields:
+      quiz: 2
+      text: What is the purpose of establishing a defensive position in combat?
+-   model: quiz.answer
+    pk: 45
+    fields:
+      question: 12
+      text: To launch surprise attacks on enemy forces
+      is_correct: false
+-   model: quiz.answer
+    pk: 46
+    fields:
+      question: 12
+      text: To advance rapidly towards enemy territory
+      is_correct: false
+-   model: quiz.answer
+    pk: 47
+    fields:
+      question: 12
+      text: To repel enemy assaults and protect friendly assets
+      is_correct: true
+-   model: quiz.answer
+    pk: 48
+    fields:
+      question: 12
+      text: To retreat and regroup after engaging enemy forces
+      is_correct: false
+-   model: quiz.question
+    pk: 13
+    fields:
+      quiz: 2
+      text: What is a key principle of offensive tactics in combat?
+-   model: quiz.answer
+    pk: 49
+    fields:
+      question: 13
+      text: Concentration of force at the decisive point
+      is_correct: true
+-   model: quiz.answer
+    pk: 50
+    fields:
+      question: 13
+      text: Spreading forces thinly across the battlefield
+      is_correct: false
+-   model: quiz.answer
+    pk: 51
+    fields:
+      question: 13
+      text: Avoiding direct engagement with enemy forces
+      is_correct: false
+-   model: quiz.answer
+    pk: 52
+    fields:
+      question: 13
+      text: Maintaining a static defensive posture
+      is_correct: false
+-   model: quiz.question
+    pk: 14
+    fields:
+      quiz: 2
+      text: What is a primary consideration when conducting urban warfare?
+-   model: quiz.answer
+    pk: 53
+    fields:
+      question: 14
+      text: Avoiding collateral damage to civilian infrastructure
+      is_correct: true
+-   model: quiz.answer
+    pk: 54
+    fields:
+      question: 14
+      text: Employing large-scale artillery bombardments
+      is_correct: false
+-   model: quiz.answer
+    pk: 55
+    fields:
+      question: 14
+      text: Relying solely on conventional infantry tactics
+      is_correct: false
+-   model: quiz.answer
+    pk: 56
+    fields:
+      question: 14
+      text: Ignoring the use of close air support
+      is_correct: false
+-   model: quiz.question
+    pk: 15
+    fields:
+      quiz: 2
+      text: What is a fundamental aspect of small unit tactics in combat?
+-   model: quiz.answer
+    pk: 57
+    fields:
+      question: 15
+      text: Flexibility to adapt to changing battlefield conditions
+      is_correct: true
+-   model: quiz.answer
+    pk: 58
+    fields:
+      question: 15
+      text: Strict adherence to predetermined plans
+      is_correct: false
+-   model: quiz.answer
+    pk: 59
+    fields:
+      question: 15
+      text: Isolation from higher command structures
+      is_correct: false
+-   model: quiz.answer
+    pk: 60
+    fields:
+      question: 15
+      text: Reliance on individual actions rather than teamwork
+      is_correct: false
+
+
+
+
+
+-   model: quiz.quiz
+    pk: 3
+    fields:
+      name: Tank Command and Control
+-   model: quiz.question
+    pk: 16
+    fields:
+      quiz: 3
+      text: What is the primary responsibility of a tank commander in combat?
+-   model: quiz.answer
+    pk: 61
+    fields:
+      question: 16
+      text: Directing the movement and fire of the tank crew
+      is_correct: true
+-   model: quiz.answer
+    pk: 62
+    fields:
+      question: 16
+      text: Repairing any mechanical failures on the tank
+      is_correct: false
+-   model: quiz.answer
+    pk: 63
+    fields:
+      question: 16
+      text: Providing medical assistance to injured soldiers
+      is_correct: false
+-   model: quiz.answer
+    pk: 64
+    fields:
+      question: 16
+      text: Communicating with friendly infantry units
+      is_correct: false
+-   model: quiz.question
+    pk: 17
+    fields:
+      quiz: 3
+      text: What is a critical aspect of tank maneuver warfare?
+-   model: quiz.answer
+    pk: 65
+    fields:
+      question: 17
+      text: Speed and agility in exploiting enemy weaknesses
+      is_correct: true
+-   model: quiz.answer
+    pk: 66
+    fields:
+      question: 17
+      text: Heavy reliance on static defensive positions
+      is_correct: false
+-   model: quiz.answer
+    pk: 67
+    fields:
+      question: 17
+      text: Minimization of offensive actions to conserve resources
+      is_correct: false
+-   model: quiz.answer
+    pk: 68
+    fields:
+      question: 17
+      text: Avoidance of direct engagements with enemy forces
+      is_correct: false
+-   model: quiz.question
+    pk: 18
+    fields:
+      quiz: 3
+      text: What role do tanks typically play in combined arms operations?
+-   model: quiz.answer
+    pk: 69
+    fields:
+      question: 18
+      text: Providing direct fire support for infantry and other units
+      is_correct: true
+-   model: quiz.answer
+    pk: 70
+    fields:
+      question: 18
+      text: Conducting reconnaissance and surveillance missions
+      is_correct: false
+-   model: quiz.answer
+    pk: 71
+    fields:
+      question: 18
+      text: Delivering medical supplies to frontline units
+      is_correct: false
+-   model: quiz.answer
+    pk: 72
+    fields:
+      question: 18
+      text: Securing supply lines and logistics routes
+      is_correct: false
+-   model: quiz.question
+    pk: 19
+    fields:
+      quiz: 3
+      text: What is a key consideration for tank crew survivability on the battlefield?
+-   model: quiz.answer
+    pk: 73
+    fields:
+      question: 19
+      text: Maintaining situational awareness and avoiding ambushes
+      is_correct: true
+-   model: quiz.answer
+    pk: 74
+    fields:
+      question: 19
+      text: Deploying decoy vehicles to confuse enemy forces
+      is_correct: false
+-   model: quiz.answer
+    pk: 75
+    fields:
+      question: 19
+      text: Always traveling at maximum speed to evade enemy fire
+      is_correct: false
+-   model: quiz.answer
+    pk: 76
+    fields:
+      question: 19
+      text: Operating without consideration for terrain and obstacles
+      is_correct: false
