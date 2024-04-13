@@ -1,230 +1,639 @@
-{% extends "main/base.html" %}
+{% extends 'main/base.html' %}
+
 
 {% block extra_css %}
 <style>
-  .content-container {
-    /* ваші стилі для контейнера */
-    margin-top: 90px;
-    /* інші стилі */
-  }
-  header.masthead {
-    background-image: url("/media/samples/tree.jpg");
-  }
+
+    
+    .learn-container {
+        margin: 50px auto;
+        
+        margin-top: 100px;
+    }
+    .learn-categories {
+        width: 75%; /* Займатиме 70% ширини */
+        margin: 0 auto; /* Відцентрувати відносно батьківського контейнера */
+    }
+    
+
+    
+    .card-img-top {
+        height: 200px; /* Встановіть фіксовану висоту для зображення */
+        object-fit: cover; /* Зображення буде змінено так, щоб воно повністю заповнило контейнер без втрати пропорцій */
+    }
+   
+
 </style>
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 {% endblock %}
 
-
-
 {% block content %}
+<div class="learn-categories">
+    <div class="learn-container">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">   
+            <h1 class="display-1 lh-1 mb-3">ТАКТИКА ВЕДЕННЯ БОЮ</h1>
+            <p class="lead fw-normal text-muted mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
+        </div>
 
-<!-- Portfolio Grid-->
-<section class="page-section bg-light" id="portfolio">
-  <div class="container">
-      <div class="text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-      </div>
-      <div class="row">
-          <div class="col-lg-4 col-sm-6 mb-4">
-              <!-- Portfolio item 1-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Threads</div>
-                      <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-              <!-- Portfolio item 2-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Explore</div>
-                      <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-              <!-- Portfolio item 3-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Finish</div>
-                      <div class="portfolio-caption-subheading text-muted">Identity</div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-              <!-- Portfolio item 4-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Lines</div>
-                      <div class="portfolio-caption-subheading text-muted">Branding</div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-              <!-- Portfolio item 5-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Southwest</div>
-                      <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-              <!-- Portfolio item 6-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Window</div>
-                      <div class="portfolio-caption-subheading text-muted">Photography</div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+            <div class="card shadow-sm">
+                <img src="media/samples/3.jpg" class="card-img-top" alt="Зображення">
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <img src="media/samples/tree.jpg" class="card-img-top" alt="Зображення">
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
 
-<!-- Portfolio Grid-->
-<section class="page-section bg-light" id="portfolio">
-  <div class="container">
-      <div class="text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-      </div>
-      <div class="row">
-          <div class="col-lg-4 col-sm-6 mb-4">
-              <!-- Portfolio item 1-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Threads</div>
-                      <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-              <!-- Portfolio item 2-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Explore</div>
-                      <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-              <!-- Portfolio item 3-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Finish</div>
-                      <div class="portfolio-caption-subheading text-muted">Identity</div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-              <!-- Portfolio item 4-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Lines</div>
-                      <div class="portfolio-caption-subheading text-muted">Branding</div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-              <!-- Portfolio item 5-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Southwest</div>
-                      <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-              <!-- Portfolio item 6-->
-              <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                      </div>
-                      <img class="img-fluid" src="/media/samples/ps.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Window</div>
-                      <div class="portfolio-caption-subheading text-muted">Photography</div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
 
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr" />
+
+    <div class="learn-container">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">   
+            <h1 class="display-1 lh-1 mb-3">ТАКТИЧНА МЕДИЦИНА<h1>
+            <p class="lead fw-normal text-muted mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr" />
+
+    <div class="learn-container">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">   
+            <h1 class="display-1 lh-1 mb-3">ТАКТИКА ВЕДЕННЯ БОЮ</h1>
+            <p class="lead fw-normal text-muted mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr" />
+
+    <div class="learn-container">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">   
+            <h1 class="display-1 lh-1 mb-3">ТАКТИКА ВЕДЕННЯ БОЮ</h1>
+            <p class="lead fw-normal text-muted mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr" />
+
+    <div class="learn-container">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">   
+            <h1 class="display-1 lh-1 mb-3">ТАКТИКА ВЕДЕННЯ БОЮ</h1>
+            <p class="lead fw-normal text-muted mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
