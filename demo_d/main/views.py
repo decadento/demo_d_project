@@ -5,7 +5,6 @@ from django.http import HttpResponse
 def index(request):
     return render(request, 'main/landing.html')
 
-
 def learn(request):
     return render(request, 'main/learn.html')
 
