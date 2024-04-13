@@ -12,6 +12,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: box-shadow 0.3s ease;
             margin-top: 200px;
+            
         }
 
         .signup-container:hover {
@@ -61,23 +62,23 @@
             background-color: #0056b3;
         }
 
-        .signup-link {
+        .login-link {
             margin-top: 15px;
             text-align: center;
             color: #666;
         }
 
-        .signup-link a {
+        .login-link a {
             color: #007bff;
             text-decoration: none;
         }
 
-        .signup-link a:hover {
+        .login-link a:hover {
             text-decoration: underline;
         }
 
         /* Стилі для футера */
-        footer {
+        /*footer {
             position: fixed;
             left: 0;
             bottom: 0;
@@ -86,7 +87,7 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-        }
+        }*/
 
     </style>
 {% endblock %}
@@ -117,10 +118,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Sign-up</button>
             <p class="login-link">Already have an account?<a href="{% url 'login' %}">Login</a></p>
-        </form>
-        
-        
-        
+        </form>   
     </div>
 
 {% endblock %}
