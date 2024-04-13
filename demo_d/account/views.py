@@ -13,6 +13,9 @@ def index(request):
 def learn(request):
     return render(request, 'main/learn.html')
 
+def tac_med(request):
+    return render(request, 'account/tactical_medicine.html')
+
 
 # signup page
 
