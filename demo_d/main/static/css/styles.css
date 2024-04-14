@@ -10834,7 +10834,7 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+  background: linear-gradient(45deg, #747264, #76885B) !important;
 }
 
 .font-alt {
@@ -10932,7 +10932,7 @@ section {
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black]::after {
   content: "";
-  background-image: url("../assets/img/portrait_black.png");
+  background-image: url("media/samples/portrait_black.png");
 }
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .button {
@@ -10946,7 +10946,7 @@ section {
 section.cta {
   position: relative;
   padding: 15rem 0;
-  background-image: url("https://source.unsplash.com/5g41N3uRPf8/1500x800");
+  background-image: url("https://scontent.flwo4-2.fna.fbcdn.net/v/t39.30808-6/430221896_751632313816516_4697965822545107377_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=6dg870SjlXEAb6rW02A&_nc_ht=scontent.flwo4-2.fna&oh=00_AfC9rZfi_10oDeWgKYpYy-PXvMWjSSUnfuwgKnXNmGAoEQ&oe=662187BC");
   background-position: center;
   background-size: cover;
 }
