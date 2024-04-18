@@ -2,6 +2,7 @@
 
 {% block extra_css %}
     <style>
+        
         /* Ваші стилі для форми логіну */
         .login-container {
             margin: 50px auto;
@@ -11,7 +12,8 @@
             background-color: #f9f9f9;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: box-shadow 0.3s ease;
-            margin-top: 200px;
+            margin-top: 140px;
+            
         }
 
         .login-container:hover {
@@ -86,6 +88,7 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
+            
         }
 
     </style>
@@ -105,11 +108,13 @@
                 {{ form.password }}
             </div>
             {% if form.non_field_errors %}
-            <div class="error-message" style="color: red;">{{ form.non_field_errors.0 }}</div>
+            <div class="error-message" style="color: #75805f;">{{ form.non_field_errors.0 }}</div>
             {% endif %}
             <button type="submit" class="btn btn-primary">Log-in</button>
             <p class="signup-link">Don't have an account? <a href="{% url 'signup' %}">Create one</a></p>
         </form>
+        
     </div>
+    
 
 {% endblock %}
