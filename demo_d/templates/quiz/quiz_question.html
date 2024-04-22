@@ -1,11 +1,26 @@
-<div>
 
-    <form id="question-form" hx-post="{% url 'get-answer' %}">
+{% block extra_css %}
+
+<style>
+  
+  #question-container {
+    
+    margin-bottom: 100px;
+    height: 300px;
+  }
+</style>
+{% endblock %}
+
+<div id="question">
+
+    <form id="question-container" hx-post="{% url 'get-answer' %}">
       {% csrf_token %}
   
       <h2 id="heading-text">
         {{ question.text }}
+        <hr class="hr" />
       </h2>
+      
   
       <ol style="list-style-type: none;">
         {% for answer in answers %}
@@ -15,10 +30,11 @@
         </li>
         {% endfor %}
       </ol>
+
+
+      <button class="btn btn-outline-dark py-3 px-4 rounded-pill" type="submit" style="margin-left: 35px;">Submit your answer</button>
   
-      <button class="btn" type="submit" >
-        Submit your answer
-      </button>
+      
   
     </form>
   </div>

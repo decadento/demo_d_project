@@ -36,8 +36,8 @@
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         {% if user.is_authenticated %}
                         <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'landing' %}">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'fpv' %}">FPV</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'start' %}">Take a quiz</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'start' %}">Test Yourself</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'learn' %}">Learn</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'logout' %}">Log Out</a></li>
                         {% else %}
