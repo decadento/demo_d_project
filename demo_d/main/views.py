@@ -11,5 +11,13 @@ def learn(request):
 def categories(request):
     return render(request, 'main/categories.html')
 
+
+
 def landing_eng(request):
     return render(request, 'main/landing_eng.html')
+
+def learn_eng(request):
+    return render(request, 'main/learn_eng.html')
+
+def categories_eng(request):
+    return render(request, 'main/categories_eng.html')

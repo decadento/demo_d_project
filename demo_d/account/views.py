@@ -7,13 +7,23 @@ from django.contrib import messages
 
 # Create your views here.
 
-def index(request):
+def landing(request):
     return render(request, 'main/landing.html')
 
 def learn(request):
     return render(request, 'main/learn.html')
 
 def fpv(request):
+    return render(request, 'account/fpv.html')
+
+
+def landing_eng(request):
+    return render(request, 'main/landing_eng.html')
+
+def learn_eng(request):
+    return render(request, 'main/learn_eng.html')
+
+def fpv_eng(request):
     return render(request, 'account/fpv.html')
 
 
@@ -70,3 +80,52 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     return redirect('landing')
+
+def user_signup_eng(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password1 = form.cleaned_data['password1']
+            password2 = form.cleaned_data['password2']
+            
+            # Check the uniqueness of the username
+            if User.objects.filter(username=username).exists():
+                form.add_error('username', 'Цей нікнейм вже зайнятий. Спробуйте інший.')
+            # Check if passwords match
+            elif password1 != password2:
+                form.add_error('password2', 'Паролі не співпадають.')
+            else:
+                form.save()
+                messages.success(request, 'Ви успішно зареєструвалися. Тепер увійдіть у свій акаунт.')
+                return redirect('login_eng')
+    else:
+        form = UserCreationForm()
+    
+    return render(request, 'account/signup_eng.html', {'form': form})
+
+
+
+
+# login page
+def user_login_eng(request):
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(request, username=username, password=password)
+            if user:
+                login(request, user)
+                return redirect('landing_eng')
+            else:
+                form.add_error(None, 'Wrong username or password!')
+    else:
+        form = LoginForm()
+
+    return render(request, 'account/login_eng.html', {'form': form})
+
+# logout page
+def user_logout_eng(request):
+    logout(request)
+    return redirect('landing_eng')
