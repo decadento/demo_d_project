@@ -29,17 +29,17 @@
             <div class="container px-5">
                 <a class="navbar-brand fw-bold" href="#page-top">PrepForce</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Меню
+                    Menu
                     <i class="bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         {% if user.is_authenticated %}
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'landing' %}">Про Нас</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'landing_eng' %}">About Us</a></li>
                         
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'start' %}">Перевір себе</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'learn' %}">Статті</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'logout' %}">Вийти</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'start_eng' %}">Test Yourself</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'learn_eng' %}">Articles</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'logout_eng' %}">Log-Out</a></li>
                         
                         <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                             <span class="d-flex align-items-center">
@@ -48,34 +48,30 @@
                             </span>
                         </button>
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="{% url 'landing_eng' %}" style="display: flex; align-items: center;">
-                                <span style="margin-right: 5px;">ENG</span>
-                                <img src="/media/samples/eng_flag.png" alt="eng" style="height: 1em;">
+                            <a class="nav-link me-lg-3" href="{% url 'landing' %}" style="display: flex; align-items: center;">
+                                <span style="margin-right: 5px;">UA</span>
+                                <img src="/media/samples/ua_flag.png" alt="ua" style="height: 1em;">
                             </a>
                         </li>
                         {% else %}
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'landing' %}">Про Нас</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'signup' %}">Зареєструватись</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'login' %}">Ввійти</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'landing_eng' %}">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'signup_eng' %}">Sign-Up</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'login_eng' %}">Log-In</a></li>
                         
                         <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                             <span class="d-flex align-items-center">
                                 <i class="bi-chat-text-fill me-2"></i>
-                                <span class="small">Надіслати Відгук</span>
+                                <span class="small">Send Feedback</span>
                             </span>
                         </button>
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="{% url 'landing_eng' %}" style="display: flex; align-items: center;">
-                                <span style="margin-right: 5px;">ENG</span>
-                                <img src="/media/samples/eng_flag.png" alt="eng" style="height: 1em;">
+                            <a class="nav-link me-lg-3" href="{% url 'landing' %}" style="display: flex; align-items: center;">
+                                <span style="margin-right: 5px;">UA</span>
+                                <img src="/media/samples/ua_flag.png" alt="ua" style="height: 1em;">
                             </a>
                         </li>
-                        
-                        
-                        
                         {% endif %}
                     </ul>
-                    
                     
                 </div>
             </div>
@@ -91,12 +87,12 @@
         <footer class="bg-black text-center py-5">
             <div class="container px-5">
                 <div class="text-white-50 small">
-                    <div class="mb-2">&copy; Данило Петрусенко 2024. Всі права захищено.</div>
-                    <a href="#!">Політика конфіденційності</a>
+                    <div class="mb-2">&copy; Danylo Petrusenko 2024. All Rights Reserved.</div>
+                    <a href="#!">Privacy</a>
                     <span class="mx-1">&middot;</span>
-                    <a href="#!">Правила користування</a>
+                    <a href="#!">Terms</a>
                     <span class="mx-1">&middot;</span>
-                    <a href="#!">Часті питання</a>
+                    <a href="#!">FAQ</a>
                 </div>
             </div>
         </footer>
@@ -130,27 +126,27 @@
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                            <label for="name">Ім`я</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Вкажіть ім`я.</div>
+                            <label for="name">Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                            <label for="email">Електронна адреса</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">Вкажіть електронну адресу.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Електронна адреса не вірна.</div>
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
                         <!-- Phone number input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Номер телефону</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">Вкажіть номер телефону.</div>
+                            <label for="phone">Phone number</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="message">Повідомлення</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">Вкажіть ваше повідомлення.</div>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                         </div>
                         <!-- Submit success message-->
                         <!---->
@@ -158,7 +154,7 @@
                         <!-- has successfully submitted-->
                         <div class="d-none" id="submitSuccessMessage">
                             <div class="text-center mb-3">
-                                <div class="fw-bolder">Дякуємо!</div>
+                                <div class="fw-bolder">Thank you!</div>
                                 
                             </div>
                         </div>
@@ -166,9 +162,9 @@
                         <!---->
                         <!-- This is what your users will see when there is-->
                         <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Щось пішло не так.</div></div>
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Something went wrong.</div></div>
                         <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Надіслати</button></div>
+                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
                     </form>
                 </div>
             </div>

@@ -100,18 +100,18 @@
         <form method="POST" class="login-form">
             {% csrf_token %}
             <div class="form-group">
-                <label for="id_username">Username:</label>
+                <label for="id_username">Нікнейм:</label>
                 {{ form.username }}
             </div>
             <div class="form-group">
-                <label for="id_password">Password:</label>
+                <label for="id_password">Пароль:</label>
                 {{ form.password }}
             </div>
             {% if form.non_field_errors %}
             <div class="error-message" style="color: #75805f;">{{ form.non_field_errors.0 }}</div>
             {% endif %}
-            <button type="submit" class="btn btn-primary">Log-in</button>
-            <p class="signup-link">Don't have an account? <a href="{% url 'signup' %}">Create one</a></p>
+            <button type="submit" class="btn btn-primary">Ввійти</button>
+            <p class="signup-link">Не маєте аккаунта? <a href="{% url 'signup' %}">Створіть </a></p>
         </form>
         
     </div>
