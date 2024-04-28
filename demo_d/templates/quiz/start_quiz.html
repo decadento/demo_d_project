@@ -13,7 +13,7 @@
     margin: auto;
     width: 50%;
     margin-top: 120px;
-    margin-bottom: 100px;
+    
   }
 
   #topic-list {
@@ -87,21 +87,23 @@
 
 
 
-<form id="topic-container" hx-post="{% url 'get-questions' %}/start">
+<form id="topic-container" hx-post="{% url 'get-questions' %}/start" class="container">
   {% csrf_token %}
-  <h2 id="heading-text">
+  <h2 id="heading-text" class="text-center">
     What would you like to learn about?
   </h2>
-  <div id="topic-list">
+  <div id="topic-list" class="text-center">
 
     <p>Please pick a topic from the below topics</p>
 
-    <ol style="list-style-type: none;">
+    <ol class="list-unstyled">
 
       {% for topic in topics %}
       <li class="option">
-        <input type="radio" id="topic-{{ forloop.counter0 }}" value="{{ topic.id }}" name="quiz_id" required>
-        <label for="topic-{{ forloop.counter0 }}">{{ topic.name }} ({{ topic.questions_count }} questions)</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="topic-{{ forloop.counter0 }}" value="{{ topic.id }}" name="quiz_id" required>
+          <label class="form-check-label" for="topic-{{ forloop.counter0 }}">{{ topic.name }} ({{ topic.questions_count }} questions)</label>
+        </div>
       </li>
       {% endfor %}
 
@@ -110,10 +112,13 @@
       {% endif %}
 
     </ol>
-    <button class="btn btn-outline-dark py-3 px-4 rounded-pill" type="submit">Start your quiz</button>
+    <div class="text-center">
+      <button class="btn btn-outline-dark py-3 px-4 rounded-pill" type="submit">Start your quiz</button>
+    </div>
     
   </div>
 </form>
+
 
 
 
