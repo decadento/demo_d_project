@@ -1,0 +1,120 @@
+-   model: quiz.quiz
+    pk: 6
+    fields:
+      name: Military Technology
+-   model: quiz.question
+    pk: 29
+    fields:
+      quiz: 6
+      text: What type of propulsion system is commonly used in modern submarines?
+-   model: quiz.answer
+    pk: 113
+    fields:
+      question: 29
+      text: Steam
+      is_correct: false
+-   model: quiz.answer
+    pk: 114
+    fields:
+      question: 29
+      text: Diesel
+      is_correct: true
+-   model: quiz.answer
+    pk: 115
+    fields:
+      question: 29
+      text: Nuclear
+      is_correct: false
+-   model: quiz.answer
+    pk: 116
+    fields:
+      question: 29
+      text: Electric
+      is_correct: false
+-   model: quiz.question
+    pk: 30
+    fields:
+      quiz: 6
+      text: What is the primary advantage of composite armor over traditional steel armor?
+-   model: quiz.answer
+    pk: 117
+    fields:
+      question: 30
+      text: Lightweight with comparable or superior protection
+      is_correct: true
+-   model: quiz.answer
+    pk: 118
+    fields:
+      question: 30
+      text: Higher durability and resistance to corrosion
+      is_correct: false
+-   model: quiz.answer
+    pk: 119
+    fields:
+      question: 30
+      text: Lower cost of production and maintenance
+      is_correct: false
+-   model: quiz.answer
+    pk: 120
+    fields:
+      question: 30
+      text: Greater ease of repair and modification
+      is_correct: false
+-   model: quiz.question
+    pk: 31
+    fields:
+      quiz: 6
+      text: What is the purpose of a railgun in military applications?
+-   model: quiz.answer
+    pk: 121
+    fields:
+      question: 31
+      text: Firing projectiles at extremely high velocities
+      is_correct: true
+-   model: quiz.answer
+    pk: 122
+    fields:
+      question: 31
+      text: Launching satellites into orbit
+      is_correct: false
+-   model: quiz.answer
+    pk: 123
+    fields:
+      question: 31
+      text: Generating electricity for military installations
+      is_correct: false
+-   model: quiz.answer
+    pk: 124
+    fields:
+      question: 31
+      text: Providing rapid transport for troops and supplies
+      is_correct: false
+-   model: quiz.question
+    pk: 32
+    fields:
+      quiz: 6
+      text: What is the primary function of an active protection system (APS) on a combat vehicle?
+-   model: quiz.answer
+    pk: 125
+    fields:
+      question: 32
+      text: Intercepting and destroying incoming threats before they hit the vehicle
+      is_correct: true
+-   model: quiz.answer
+    pk: 126
+    fields:
+      question: 32
+      text: Enhancing communication and situational awareness for the crew
+      is_correct: false
+-   model: quiz.answer
+    pk: 127
+    fields:
+      question: 32
+      text: Improving fuel efficiency and engine performance
+      is_correct: false
+-   model: quiz.answer
+    pk: 128
+    fields:
+      question: 32
+      text: Increasing the vehicle's top speed and maneuverability
+      is_correct: false
