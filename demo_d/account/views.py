@@ -24,7 +24,7 @@ def learn_eng(request):
     return render(request, 'main/learn_eng.html')
 
 def fpv_eng(request):
-    return render(request, 'account/fpv.html')
+    return render(request, 'account/fpv_eng.html')
 
 
 # signup page
