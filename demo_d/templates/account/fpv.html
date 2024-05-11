@@ -3,6 +3,11 @@
 
 {% block extra_css %}
 <style>
+
+    iframe {
+        aspect-ratio: 16 / 9;
+        width: 100% !important;
+    }
     
     /* Ваші стилі для форми логіну */
     .article-container {
@@ -311,18 +316,20 @@
                 <div class="cards-conteiner">
                     <div class="row mb-2">
                         <div class="col-md-6">
-                            <div class="card" style="width: 20rem;">
-                                <img src="https://i.lb.ua/045/54/65a2dbb728df1.jpeg" class="card-img-top" style="height: 200px;" alt="...">
+                            <div class="card" style="width: 20rem; margin-bottom: 10px;">
+                                <img src="https://i.lb.ua/045/54/65a2dbb728df1.jpeg" class="card-img-top" style="height: 160px;" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Навчись збирати FPV-дрон власноруч. Спеціалісти допоможуть освоїти компетентний підбір комплектуючих та деталей для якісної збірки.</p>
+                                    <a class="btn btn-primary" style="width: 100px;" href="#">Перейти</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card" style="width: 20rem;">
-                                <img src="https://i.ytimg.com/vi/XnutpyvMiUE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDPKLRtVwu4FllPYyXM1Qq8FFXVKw" class="card-img-top" style="height: 200px;" alt="...">
+                                <img src="https://i.ytimg.com/vi/XnutpyvMiUE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDPKLRtVwu4FllPYyXM1Qq8FFXVKw" class="card-img-top" style="height: 160px;" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Долучайся до курсу керування FPV-дронами. Досвідчені пілоти допоможуть зрозуміти основи маніпуляції з апаратом, навчать всьому необхідному.</p>
+                                    <a class="btn btn-primary" style="width: 100px;" href="#">Перейти</a>
                                 </div>
                             </div>
                         </div>
@@ -331,8 +338,8 @@
                 
 
             <nav class="blog-pagination" style="margin-top: 30px;">
-                <a class="btn btn-primary" href="#">Previous</a>
-                <a class="btn btn-primary" href="#">Next</a>
+                <a class="btn btn-primary" href="#">До попередньої</a>
+                <a class="btn btn-primary" href="#">Наступна</a>
             </nav>
 
             </div><!-- /.blog-main -->
@@ -344,8 +351,8 @@
 
         <aside class="col-md-4 blog-sidebar">
             <div class="p-3 mb-3 bg-light rounded">
-                <h4 class="font-italic">About</h4>
-                <p class="mb-0">Let's consider what is the peculiarity of FPV drones and their combat capabilities for defeating equipment and manpower.</p>
+                <h4 class="font-italic">Дисклеймер</h4>
+                <p class="mb-0">Розглянемо, в чому полягає особливість дронів FPV та їх бойові можливості по ураженню техніки та живої сили.</p>
             </div>
 
             <div class="p-3">

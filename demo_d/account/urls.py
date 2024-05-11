@@ -15,6 +15,6 @@ urlpatterns = [
     path('logout/', views.user_logout, name='logout'),
     path('logout_eng/', views.user_logout_eng, name='logout_eng'),
     path('fpv/', views.fpv, name='fpv'),
-    path('fpv_eng/', views.fpv, name='fpv_eng'),
+    path('fpv_eng/', views.fpv_eng, name='fpv_eng'),
 ]
 
