@@ -22,6 +22,9 @@ def turniket(request):
 def at4(request):
     return render(request, 'account/at4.html')
 
+def m2a2(request):
+    return render(request, 'account/m2a2.html')
+
 
 def landing_eng(request):
     return render(request, 'main/landing_eng.html')
@@ -38,6 +41,9 @@ def turniket_eng(request):
 
 def at4_eng(request):
     return render(request, 'account/at4_eng.html')
+
+def m2a2_eng(request):
+    return render(request, 'account/m2a2_eng.html')
 
 
 # signup page

@@ -20,5 +20,7 @@ urlpatterns = [
     path('turniket_eng/', views.turniket_eng, name='turniket_eng'),
     path('at4/', views.at4, name='at4'),
     path('at4_eng/', views.at4_eng, name='at4_eng'),
+    path('m2a2/', views.m2a2, name='m2a2'),
+    path('m2a2_eng/', views.m2a2_eng, name='m2a2_eng'),
 ]
 
