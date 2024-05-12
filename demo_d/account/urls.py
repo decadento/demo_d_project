@@ -16,5 +16,9 @@ urlpatterns = [
     path('logout_eng/', views.user_logout_eng, name='logout_eng'),
     path('fpv/', views.fpv, name='fpv'),
     path('fpv_eng/', views.fpv_eng, name='fpv_eng'),
+    path('turniket/', views.turniket, name='turniket'),
+    path('turniket_eng/', views.turniket_eng, name='turniket_eng'),
+    path('at4/', views.at4, name='at4'),
+    path('at4_eng/', views.at4_eng, name='at4_eng'),
 ]
 

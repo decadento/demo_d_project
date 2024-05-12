@@ -16,6 +16,12 @@ def learn(request):
 def fpv(request):
     return render(request, 'account/fpv.html')
 
+def turniket(request):
+    return render(request, 'account/turniket.html')
+
+def at4(request):
+    return render(request, 'account/at4.html')
+
 
 def landing_eng(request):
     return render(request, 'main/landing_eng.html')
@@ -25,6 +31,13 @@ def learn_eng(request):
 
 def fpv_eng(request):
     return render(request, 'account/fpv_eng.html')
+
+def turniket_eng(request):
+    return render(request, 'account/turniket_eng.html')
+
+
+def at4_eng(request):
+    return render(request, 'account/at4_eng.html')
 
 
 # signup page
