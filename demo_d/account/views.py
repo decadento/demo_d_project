@@ -25,6 +25,9 @@ def at4(request):
 def m2a2(request):
     return render(request, 'account/m2a2.html')
 
+def caesar(request):
+    return render(request, 'account/caesar.html')
+
 
 def landing_eng(request):
     return render(request, 'main/landing_eng.html')
@@ -45,6 +48,8 @@ def at4_eng(request):
 def m2a2_eng(request):
     return render(request, 'account/m2a2_eng.html')
 
+def caesar_eng(request):
+    return render(request, 'account/caesar_eng.html')
 
 # signup page
 

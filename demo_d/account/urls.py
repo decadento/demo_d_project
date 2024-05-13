@@ -22,5 +22,7 @@ urlpatterns = [
     path('at4_eng/', views.at4_eng, name='at4_eng'),
     path('m2a2/', views.m2a2, name='m2a2'),
     path('m2a2_eng/', views.m2a2_eng, name='m2a2_eng'),
+    path('caesar/', views.caesar, name='caesar'),
+    path('caesar_eng/', views.caesar_eng, name='caesar_eng'),
 ]
 
