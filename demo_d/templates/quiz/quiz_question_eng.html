@@ -1,0 +1,46 @@
+
+{% block extra_css %}
+
+<style>
+  
+  #question-container {
+    
+    margin-bottom: 100px;
+    height: 300px;
+  }
+</style>
+{% endblock %}
+
+<div id="question">
+
+    <form id="question-container" hx-post="{% url 'get-answer' %}">
+      {% csrf_token %}
+  
+      <h2 id="heading-text">
+        {{ question.text }}
+        <hr class="hr" />
+      </h2>
+      
+  
+      <ol style="list-style-type: none;">
+        {% for answer in answers %}
+        <li class="option">
+          <input type="radio" id="answer-{{ forloop.counter0 }}" value="{{ answer.id }}" name="answer_id" required>
+          <label for="answer-{{ forloop.counter0 }}">{{ answer.text }}</label>
+        </li>
+        {% endfor %}
+      </ol>
+
+
+      <button class="btn btn-outline-dark py-3 px-4 rounded-pill" type="submit" style="margin-left: 35px;">Submit your answer</button>
+  
+      
+  
+    </form>
+  </div>
+  
+  <script>
+    window.onbeforeunload = function(){
+      return "Are you sure you want to leave? You will lose your progress.";
+    };
+  </script>

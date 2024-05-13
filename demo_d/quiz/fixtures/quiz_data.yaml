@@ -455,3 +455,128 @@
       question: 19
       text: Operating without consideration for terrain and obstacles
       is_correct: false
+
+
+-   model: quiz.question
+    pk: 20
+    fields:
+      quiz: 3
+      text: What is the primary advantage of a tank's main gun in combat?
+-   model: quiz.answer
+    pk: 77
+    fields:
+      question: 20
+      text: High firepower capable of engaging armored and fortified targets
+      is_correct: true
+-   model: quiz.answer
+    pk: 78
+    fields:
+      question: 20
+      text: Versatility for engaging both ground and aerial threats
+      is_correct: false
+-   model: quiz.answer
+    pk: 79
+    fields:
+      question: 20
+      text: Ability to traverse rugged terrain with ease
+      is_correct: false
+-   model: quiz.answer
+    pk: 80
+    fields:
+      question: 20
+      text: Long-range accuracy for precision strikes
+      is_correct: false
+
+-   model: quiz.quiz
+    pk: 4
+    fields:
+      name: Military Medical Procedures
+-   model: quiz.question
+    pk: 21
+    fields:
+      quiz: 4
+      text: What is the primary objective of a triage process in a medical emergency?
+-   model: quiz.answer
+    pk: 81
+    fields:
+      question: 21
+      text: To prioritize treatment based on the severity of injuries
+      is_correct: true
+-   model: quiz.answer
+    pk: 82
+    fields:
+      question: 21
+      text: To administer first aid to all injured individuals simultaneously
+      is_correct: false
+-   model: quiz.answer
+    pk: 83
+    fields:
+      question: 21
+      text: To transport all casualties to medical facilities immediately
+      is_correct: false
+-   model: quiz.answer
+    pk: 84
+    fields:
+      question: 21
+      text: To stabilize patients before further assessment
+      is_correct: false
+
+-   model: quiz.question
+    pk: 22
+    fields:
+      quiz: 4
+      text: What is the purpose of the ABCDE approach in trauma care?
+-   model: quiz.answer
+    pk: 85
+    fields:
+      question: 22
+      text: To systematically assess and address life-threatening conditions
+      is_correct: true
+-   model: quiz.answer
+    pk: 86
+    fields:
+      question: 22
+      text: To administer pain relief to injured individuals
+      is_correct: false
+-   model: quiz.answer
+    pk: 87
+    fields:
+      question: 22
+      text: To ensure proper documentation of medical procedures
+      is_correct: false
+-   model: quiz.answer
+    pk: 88
+    fields:
+      question: 22
+      text: To coordinate evacuation procedures with field hospitals
+      is_correct: false
+
+-   model: quiz.question
+    pk: 23
+    fields:
+      quiz: 4
+      text: What is a primary consideration when treating a casualty with severe bleeding?
+-   model: quiz.answer
+    pk: 89
+    fields:
+      question: 23
+      text: Apply direct pressure to the wound to control bleeding
+      is_correct: true
+-   model: quiz.answer
+    pk: 90
+    fields:
+      question: 23
+      text: Elevate the affected limb above the heart to reduce blood flow
+      is_correct: false
+-   model: quiz.answer
+    pk: 91
+    fields:
+      question: 23
+      text: Administer pain medication before addressing the bleeding
+      is_correct: false
+-   model: quiz.answer
+    pk: 92
+    fields:
+      question: 23
+      text: Remove any foreign objects embedded in the wound immediately
+      is_correct: false
