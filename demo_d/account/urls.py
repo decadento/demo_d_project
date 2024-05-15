@@ -22,5 +22,9 @@ urlpatterns = [
     path('at4_eng/', views.at4_eng, name='at4_eng'),
     path('m2a2/', views.m2a2, name='m2a2'),
     path('m2a2_eng/', views.m2a2_eng, name='m2a2_eng'),
+    path('osint/', views.osint, name='osint'),
+    path('osint_eng/', views.osint_eng, name='osint_eng'),
+    path('emergency_pack/', views.emergency_pack, name='emergency_pack'),
+    path('emergency_pack_eng/', views.emergency_pack_eng, name='emergency_pack_eng'),
 ]
 
