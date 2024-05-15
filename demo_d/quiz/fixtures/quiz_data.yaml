@@ -25,12 +25,6 @@
       question: 1
       text: "Нейтралізація ворожого персоналу вибуховою силою"
       is_correct: true
--   model: quiz.answer
-    pk: 4
-    fields:
-      question: 1
-      text: "Пробиття перешкод та створення шляхів підходу"
-      is_correct: false
 -   model: quiz.question
     pk: 6
     fields:
@@ -168,7 +162,9 @@
     pk: 39
     fields:
       question: 10
-      text: "Розвідка та нагляд"
+      text:
+
+ "Розвідка та нагляд"
       is_correct: false
 -   model: quiz.answer
     pk: 40
@@ -176,3 +172,305 @@
       question: 10
       text: "Зв'язок та логістика"
       is_correct: false
+
+
+- model: quiz.quiz
+  pk: 2
+  fields:
+    name: "Тест на тему М2А2 Бредлі"
+- model: quiz.question
+  pk: 11
+  fields:
+    quiz: 2
+    text: "Яка основна функція бойової машини піхоти М2А2 Бредлі?"
+- model: quiz.answer
+  pk: 41
+  fields:
+    question: 11
+    text: "Транспортування військових відділень"
+    is_correct: false
+- model: quiz.answer
+  pk: 42
+  fields:
+    question: 11
+    text: "Підтримка вогнем для піхоти"
+    is_correct: true
+- model: quiz.answer
+  pk: 43
+  fields:
+    question: 11
+    text: "Боротьба з повітряними цілями"
+    is_correct: false
+- model: quiz.answer
+  pk: 44
+  fields:
+    question: 11
+    text: "Зберігання та транспортування боєприпасів"
+    is_correct: false
+- model: quiz.question
+  pk: 12
+  fields:
+    quiz: 2
+    text: "Яку основну зброю використовує М2А2 Бредлі?"
+- model: quiz.answer
+  pk: 45
+  fields:
+    question: 12
+    text: "30-мм автоматична гармата"
+    is_correct: true
+- model: quiz.answer
+  pk: 46
+  fields:
+    question: 12
+    text: "Ракетні комплекси"
+    is_correct: false
+- model: quiz.answer
+  pk: 47
+  fields:
+    question: 12
+    text: "Автоматична гвинтівка"
+    is_correct: false
+- model: quiz.answer
+  pk: 48
+  fields:
+    question: 12
+    text: "Гранатомет"
+    is_correct: false
+- model: quiz.question
+  pk: 13
+  fields:
+    quiz: 2
+    text: "Яка максимальна швидкість руху М2А2 Бредлі на дорозі?"
+- model: quiz.answer
+  pk: 49
+  fields:
+    question: 13
+    text: "65 км/год"
+    is_correct: false
+- model: quiz.answer
+  pk: 50
+  fields:
+    question: 13
+    text: "70 км/год"
+    is_correct: false
+- model: quiz.answer
+  pk: 51
+  fields:
+    question: 13
+    text: "60 км/год"
+    is_correct: true
+- model: quiz.answer
+  pk: 52
+  fields:
+    question: 13
+    text: "75 км/год"
+    is_correct: false
+- model: quiz.question
+  pk: 14
+  fields:
+    quiz: 2
+    text: "Яка основна характеристика бронювання М2А2 Бредлі?"
+- model: quiz.answer
+  pk: 53
+  fields:
+    question: 14
+    text: "Панелі броні товщиною 20 мм"
+    is_correct: false
+- model: quiz.answer
+  pk: 54
+  fields:
+    question: 14
+    text: "Панелі броні товщиною 50 мм"
+    is_correct: false
+- model: quiz.answer
+  pk: 55
+  fields:
+    question: 14
+    text: "Панелі броні товщиною 25 мм"
+    is_correct: true
+- model: quiz.answer
+  pk: 56
+  fields:
+    question: 14
+    text: "Панелі броні товщиною 30 мм"
+    is_correct: false
+- model: quiz.question
+  pk: 15
+  fields:
+    quiz: 2
+    text: "Яка максимальна кількість військовослужбовців, яку може перевозити М2А2 Бредлі?"
+- model: quiz.answer
+  pk: 57
+  fields:
+    question: 15
+    text: "6 осіб"
+    is_correct: false
+- model: quiz.answer
+  pk: 58
+  fields:
+    question: 15
+    text: "8 осіб"
+    is_correct: true
+- model: quiz.answer
+  pk: 59
+  fields:
+    question: 15
+    text: "10 осіб"
+    is_correct: false
+- model: quiz.answer
+  pk: 60
+  fields:
+    question: 15
+    text: "12 осіб"
+    is_correct: false
+
+    
+- model: quiz.quiz
+  pk: 3
+  fields:
+    name: "Тест на тему FPV-дрони камікадзе"
+- model: quiz.question
+  pk: 16
+  fields:
+    quiz: 3
+    text: "Що означає абревіатура 'FPV' у контексті дронів?"
+- model: quiz.answer
+  pk: 61
+  fields:
+    question: 16
+    text: "Перегляд з першої особи"
+    is_correct: true
+- model: quiz.answer
+  pk: 62
+  fields:
+    question: 16
+    text: "Перевірка перед вильотом"
+    is_correct: false
+- model: quiz.answer
+  pk: 63
+  fields:
+    question: 16
+    text: "Передавання відео у реальному часі"
+    is_correct: false
+- model: quiz.answer
+  pk: 64
+  fields:
+    question: 16
+    text: "Програмування автопілота"
+    is_correct: false
+- model: quiz.question
+  pk: 17
+  fields:
+    quiz: 3
+    text: "Чим відрізняється FPV-дрон камікадзе від звичайного FPV-дрону?"
+- model: quiz.answer
+  pk: 65
+  fields:
+    question: 17
+    text: "Має вибухонебезпечний пристрій"
+    is_correct: true
+- model: quiz.answer
+  pk: 66
+  fields:
+    question: 17
+    text: "Має пілота на борту"
+    is_correct: false
+- model: quiz.answer
+  pk: 67
+  fields:
+    question: 17
+    text: "Має збільшену дальність польоту"
+    is_correct: false
+- model: quiz.answer
+  pk: 68
+  fields:
+    question: 17
+    text: "Має вбудовану камеру високої роздільної здатності"
+    is_correct: false
+- model: quiz.question
+  pk: 18
+  fields:
+    quiz: 3
+    text: "Яка можлива мета використання FPV-дронів камікадзе?"
+- model: quiz.answer
+  pk: 69
+  fields:
+    question: 18
+    text: "Виконання військових операцій"
+    is_correct: true
+- model: quiz.answer
+  pk: 70
+  fields:
+    question: 18
+    text: "Спостереження за природними катаклізмами"
+    is_correct: false
+- model: quiz.answer
+  pk: 71
+  fields:
+    question: 18
+    text: "Подальша експлуатація у цивільних цілях"
+    is_correct: false
+- model: quiz.answer
+  pk: 72
+  fields:
+    question: 18
+    text: "Зйомка пейзажів"
+    is_correct: false
+- model: quiz.question
+  pk: 19
+  fields:
+    quiz: 3
+    text: "Які можливі заходи безпеки повинні бути вжиті при роботі з FPV-дронами камікадзе?"
+- model: quiz.answer
+  pk: 73
+  fields:
+    question: 19
+    text: "Обмеження доступу до дронів"
+    is_correct: true
+- model: quiz.answer
+  pk: 74
+  fields:
+    question: 19
+    text: "Завжди тримайте FPV-дрон поза зоною видимості"
+    is_correct: true
+- model: quiz.answer
+  pk: 75
+  fields:
+    question: 19
+    text: "Використання безпілотних літальних апаратів"
+    is_correct: false
+- model: quiz.answer
+  pk: 76
+  fields:
+    question: 19
+    text: "Використання дронів лише у відкритих просторах"
+    is_correct: false
+- model: quiz.question
+  pk: 20
+  fields:
+    quiz: 3
+    text: "Які можливі наслідки можуть виникнути від використання FPV-дронів камікадзе?"
+- model: quiz.answer
+  pk: 77
+  fields:
+    question: 20
+    text: "Цивільні та військові жертви"
+    is_correct: true
+- model: quiz.answer
+  pk: 78
+  fields:
+    question: 20
+    text: "Загублені дрони"
+    is_correct: false
+- model: quiz.answer
+  pk: 79
+  fields:
+    question: 20
+    text: "Порушення приватності"
+    is_correct: false
+- model: quiz.answer
+  pk: 80
+  fields:
+    question: 20
+    text: "Технічні несправності"
+    is_correct: false
