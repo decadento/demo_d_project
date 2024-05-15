@@ -1,0 +1,364 @@
+{% extends 'main/base_eng.html' %}
+
+
+{% block extra_css %}
+<style>
+
+    iframe {
+        aspect-ratio: 16 / 9;
+        width: 100% !important;
+    }
+    
+    /* Ваші стилі для форми логіну */
+    .article-container {
+        
+        margin-top: 100px;
+        
+    }
+
+    /* Ваші стилі для форми логіну */
+    .content-container {
+        
+        margin-top: 10px;
+        
+    }
+
+    /* Ваші стилі для форми логіну */
+    .cards-conteiner {
+        
+        margin-top: 10px;
+        
+    }
+
+    .jumbotron {
+        background: linear-gradient(to right, #000000, #f56f6f); /* Градієнт від чорного до темно-сірого */
+    }
+
+    .body {
+        background-color: #fff;
+    }
+</style>
+
+{% endblock %}
+
+{% block content %}
+<body>
+    
+
+<div class="article-container">
+
+    <div class="container">
+
+        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+            <div class="row">
+                <div class="col-md-6 px-0">
+                    <h1 class="display-4 font-italic">OSINT</h1>
+                    <p class="lead my-3">The full-scale war in Ukraine showed how powerful a tool OSINT is. We understand what it is and how to use this data in a state of war.                     </p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="/media/samples/pf_logo_bg.png" alt="Логотип" style="height: 400px;">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+
+        
+
+        <main role="main" class="content-container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+            <h3 class="pb-3 mb-4 font-italic border-bottom">
+                
+            </h3>
+
+            
+
+            
+
+            <div class="blog-post">  
+                <p class="blog-post-meta">May 12. Author: <a href="https://www.linkedin.com/in/danylo-petrusenko-73b872208/"> decadent</a></p>
+                <h2 class="blog-post-title">What is OSINT?              </h2>
+                
+
+                <p>OSINT is Open Source Intelligence, intelligence based on open sources. Such sources are mainly social networks Instagram, Facebook, Russian VK resources, "classmates" and livejournal. Recently, TikTok has been very popular.     </p>
+                <p>In addition, there are a few more categories: </p>
+                 <br>
+                 <ul>
+                     <li>state data: open reports, declarations, press conferences, etc.; </li>
+                     <li>all types of mass media;</li>
+                     <li>academic publications, professional works; </li>
+                     <li>"grey" literature: patents, technical reports; </li>
+                     <li>observation: radio, aerial photography; </li>
+                     <li>commercial data: images, financial and industrial evaluations, databases. </li>
+                    
+                  </ul>
+               
+                  <br>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/OY3OK5LY5cQ" width="730" height="310" > </iframe>
+                </div>
+
+
+                <p>Do you remember how at the beginning of the full-scale invasion of the Russian Federation into Ukraine, all the mass media wrote about a huge 64-kilometer column of Russian equipment? That's right: the images were obtained from the commercial company Maxar Technologies, which sells its services. </p>
+                 <p>Over 50 countries help the Ukrainian army. Therefore, the Defense Forces have a huge variety of ammunition and weapons. Correspondents are allowed to visit our military, or they themselves are photographed with weapons or shells. In particular, it became known that the Armed Forces have Iranian ammunition for tanks and Grads. </p>
+                 <p>For example, a photo of a soldier of the 47th OMBr with Pakistani 122-mm shells.</p>
+                
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/pakystanski-snaryady-47-ombr.jpeg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+                
+                <p>OSINT allows you to establish not only what the Ukrainian army has, but also where the occupiers are located and what weapons they have. In the summer of 2022, Ukrainian journalists identified the location of the Russian base in occupied Makiivka, in Donetsk region. One of the "volunteers" showed the video from inside the base, and the other from the outside. </p>
+                
+                
+                <p>X (formerly Twitter) has many OSINT researchers: for example, GeoConfirmed. This team repeatedly refuted Russian fakes and identified positions even behind the trees in the background of the fields. Visual identification, if mastered, is a powerful lever in the information war. </p>
+                <p>At the end of March, the propagandists rolled out a resolution: allegedly, two Ukrainian soldiers stopped a car with a child inside, and then shot to scare them. The authors of GeoConfirmed established that the plot was filmed 30 km from the front line in the depths of the temporarily occupied territory. They specified the location with the help of trees, high-voltage power lines and — banally — by the behavior of "Ukrainian soldiers." Check out the thread, it's extremely interesting and informative. </p>
+                <p>Also, part of the M2A2 Bradley of the Ukrainian military received BRAT dynamic protection kits. </p>
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/Znimok-ekrana-2023-10-18-o-20.22.39.jpg" class="figure-img img -fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    <figcaption class="figure-caption text-center">Example resource for OSINT research.</figcaption>
+                </figure>
+
+                <p>The war with the Russian occupiers is covered as much as possible in the media and social networks. OSINT is an extremely powerful tool that helps Ukraine in the fight against the occupiers. And that is why the Ukrainian authorities are actively blocking reports about where the Russian attacks "flew", which part is looking for body armor: everything that the occupiers can use for their own purposes. After all, there are OSINT-ers from that side as well. </p>
+               
+               
+                <hr>
+                <h2 class="blog-post-title">Where to start with OSINT?</h2>
+                 <p>The toolkit is so wide that it is difficult to even decide where to start. Therefore, let's narrow the range of searches to a few: </p>
+                 <br>
+                 <ul>
+                     <li>How to find an approximate place on the map by a photo. </li>
+                     <li>How to check whether a photo has been processed in Photoshop. </li>
+                     <li>How to find a person by photo. </li>
+                    
+                  </ul>
+
+                  <hr>
+                  <h2 class="blog-post-title">How to set the location from a photo on the network</h2>
+                  <p>What you and I will be doing is called GEOINT. Let's do it on the example of a video.               </p>
+                <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ua" dir="ltr"><a href="https://twitter.com/hashtag/%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA?src=hash&amp;ref_src=twsrc%5Etfw">#Донецк</a>, 09/09/23, флаг Украины над городом <a href="https://t.co/hfCVJashfy">https://t.co/hfCVJashfy</a> <a href="https://t.co/H5W7bQzCBH">pic.twitter.com/H5W7bQzCBH</a></p>&mdash; Necro Mancer (@666_mancer) <a href="https://twitter.com/666_mancer/status/1700424796096348463?ref_src=twsrc%5Etfw">September 9, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                
+                
+
+
+                
+                <p>Electricity lines, fields, mountains can serve as landmarks. In short, any visual elements that can catch the eye. </p>
+                 <p>We see the Ukrainian flag flying over temporarily occupied Donetsk. Let's find the area over which the Ukrainian flag flew. In the middle of the video, we see three high-rise buildings, two of which look the same. We will rely on them to determine the filming location. </p>
+                 <p>We installed two towers in red, and another skyscraper in white. </p>
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/ckrin-1.jpg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+                <p>Then we go to the photo search service. Let's start with Google Photos. Unfortunately, he does not recognize the houses in the photo.               </p>
+                
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/skrin-2-2048x1018.jpg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+                
+                <p>We will use the following service — Photo Location. It is important that the photo is in jpeg format, it does not work with others. We load the photo, and we see that the service has stopped.    </p>
+                
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/skrin-3.jpg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+
+
+                <p>Let's go another way: we'll look for a list of the tallest buildings in Donetsk. This is even in Wikipedia. We see the "Northern" residential complex, which has a similar shape to the object in our screenshot.        </p>
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/skrin-4.jpg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+                <p>We go to the page of the residential complex in Wikipedia and see the coordinates: 48°02′18″ N. sh. 37°46′53″ E. d. We kill them in Google Maps and find the right building with a hemisphere on top. </p>
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/skrin-5.jpg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+                <p>Now it is necessary to find two similar new buildings with characteristic architecture. We use Google Maps. Found! To make sure, let's take a look at the streets: fortunately, before the occupation, Google Maps managed to visit the "eastern pearl of Ukraine". We see that one of the houses is unfinished, but the first one is the same as in the video.       </p>
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/skrin-6.jpg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+                
+                <p>All this took me about an hour of searching.  </p>
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/skrin-7.jpg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+                <hr>
+                <h2 class="blog-post-title">How to check if a photo has been processed in Photoshop</h2>
+
+                
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/SeU_EOoHmKU" width="730" height="310" > </iframe>
+                </div>
+                
+                <p>How to understand whether the photo was processed on the map? There are several services for this, for example, Forensically. It allows you to analyze the level of noise, determine whether an object has been copied and pasted into the photo, and also see the level of illumination of the photo. And all this without any subscriptions. The service has a clear FAQ, so there should not be any particular problems with how to use it. </p>
+               
+                <p>For example: there is a photo of the former Prime Minister of Great Britain Boris Johnson. I rather sloppily added a poster to it. After uploading the photo to the service, we can see that the poster stands out very strongly in the Error Level Analysis column. If you go to the Meta Data, it even says that everything was done in Photoshop.</p>
+               
+               
+               
+               
+               
+                <figure class="figure" >
+                    <img src="https://img.tsn.ua/cached/205/tsn-86026451a4bd5b82b0f7aa9436ae117b/thumbs/1036x648/af/99/39f2dd104fcbe742d6ad52708f0c99af.jpeg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    <figcaption class="figure-caption text-center">Photo of Boris Johnson for checking processing in Photoshop.            </figcaption>
+                </figure>
+
+
+
+                <p>A few days before the beginning of the full-scale invasion of the Russian Federation into Ukraine, OSINT-ers established that Vladimir Putin's appeal to recognize ORDO and ORLO as independent states was recorded in advance. For this, they checked the video in a special service. There are many such: here, for example, Metadata2Go. For clarity, I uploaded my own video of a walk in the rain to see what data the service can detect.</p>
+                
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/pryklad-metadanyh.jpg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+                
+                <p>Separately, it is worth noting that there are services that delete metadata and record new ones instead. In such cases, Exif Viewer can help.              </p>
+                
+                
+                
+                <hr>
+                <h2 class="blog-post-title">How to find a person by photo                </h2>
+                <p>Sometimes there is a need to find a person in a photo. There are several services for this. PimEyes is one of the most effective, but it only gives 10 free searches and has limitations. The full version is available as a subscription for $30 per month or $15 for one session of data. The more photos you have, the more accurate the search.  </p>
+                
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/dzhonsonyuka-znajshhov.jpg" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+                <p>There is also a Source Searcher bot in Telegram. It is not as accurate as Pim Eyes, but it can search Google, Yandex, TinEye, Baidu, Bing and even Telegram channels. </p>
+                 <p>The Ukrainian OSINT agency Molfar has a whole set of OSINT resources that help in the search for information.</p>
+                <figure class="figure" >
+                    <img src="https://osvita.nakypilo.ua/wp-content/uploads/2023/10/molfar-skrin.png" class="figure-img img-fluid rounded custom-figure" width="900" height="200" alt="A generic square placeholder image with rounded corners in a figure.">
+                    
+                </figure>
+
+                <hr>
+                <h2 class="blog-post-title">And in conclusion...             </h2>
+
+
+                <p>It is worth noting that these tools are the simplest and most basic. This area itself is much deeper and more complex, sometimes checking information requires many days. </p>
+                 <p>If you need to search in Russia, it is desirable to have accounts in their social networks. Secret factory workers repeatedly posted photos of themselves and their families, as revealed in a Toronto TV investigation. Journalists managed to find a secret division of the Main Intelligence Directorate of Moscow. </p>
+                 <p>In addition to Molfar, there is a Telegram channel "Cyberbez" and a TikTok account of the same name, where various tools for OSINT are publicly published. We also recommend the HackYourMom site, which, despite its name, has a wide range of tools for mastering OSINT and teaches how to properly protect your own data. A beginner's guide has been published on Medium, listing useful tools and tips on how to get started. </p>
+                 <p>And finally, we recommend the game GeoGuessr, where you can practice looking for places on the world map, including in Ukraine.</p>
+
+
+
+                
+                
+                
+                
+
+            </div>
+
+
+
+
+            
+
+
+
+
+            
+
+            <div class="blog-post">
+                
+
+            
+                <div class="cards-conteiner">
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div class="card" style="width: 20rem; margin-bottom: 10px;" >
+                                <img src="https://www.educatorstechnology.com/wp-content/uploads/2023/05/3367_1.png" class="card-img-top" style="height: 160px;" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Try yourself as an OSINT specialist - try the Geoguessr game.</p>
+                                    
+                                    
+                                    <a class="btn btn-primary" style="width: 100px;" href="https://www.geoguessr.com/">More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="width: 20rem;">
+                                <img src="https://traversals.com/wp-content/uploads/2020/05/AdobeStock_164586542-1024x576.jpeg" class="card-img-top" style="height: 160px;" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Take a comprehensive OSINT course on Udemy at a discount.</p>
+                                    <br>
+                                    <a class="btn btn-primary" style="width: 100px;" href="https://www.udemy.com/course/osint-open-source-intelligence/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.ROW&campaigntype=Search&portfolio=ROW-English&language=EN&product=Course&test=&audience=DSA&topic=&priority=&utm_content=deal4584&utm_term=_._ag_77879423894_._ad_535397279517_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171032_._li_1012859_._pd__._&matchtype=&gad_source=1&gclid=CjwKCAjwupGyBhBBEiwA0UcqaFwXFKusl5HXbRcDpD6ZilXZOTlTq9YIGVx3aLF74tJuDOzmtTQqVxoCkHQQAvD_BwE&couponCode=LEADERSALE24B">More...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            <nav class="blog-pagination" style="margin-top: 30px;">
+                <a class="btn btn-primary" href="#">Previous</a>
+                <a class="btn btn-primary" href="#">Next</a>
+            </nav>
+
+            </div><!-- /.blog-main -->
+
+            
+
+        </div><!-- /.row -->
+
+
+        <aside class="col-md-4 blog-sidebar">
+            <div class="p-3 mb-3 bg-light rounded">
+                <h4 class="font-italic">Disclaimer</h4>
+                <p>#osint #agent #spy #investigation #disclosure</p>
+                <p class="mb-0">Reveal your inner OSINT specialist.</p>
+            </div>
+
+            <div class="p-3">
+                <h4 class="font-italic">Архів</h4>
+                <ol class="list-unstyled mb-0">
+                    <li><a href="#">March 2014</a></li>
+                    <li><a href="#">February 2014</a></li>
+                    <li><a href="#">January 2014</a></li>
+                    <li><a href="#">December 2013</a></li>
+                    <li><a href="#">November 2013</a></li>
+                    <li><a href="#">October 2013</a></li>
+                    <li><a href="#">September 2013</a></li>
+                    <li><a href="#">August 2013</a></li>
+                    <li><a href="#">July 2013</a></li>
+                    <li><a href="#">June 2013</a></li>
+                    <li><a href="#">May 2013</a></li>
+                    <li><a href="#">April 2013</a></li>
+                </ol>
+            </div>
+
+            <div class="p-3">
+                <h4 class="font-italic">Follow us on:</h4>
+                <ol class="list-unstyled">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+            </aside><!-- /.blog-sidebar -->
+        </main><!-- /.container -->
+
+        <footer class="blog-footer">
+        
+        <p>
+            
+        </p>
+        </footer>
+
+        
+    
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="250" viewBox="0 0 200 250" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="13" style="font-weight:bold;font-size:13pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg>
+    </div>
+
+</div>
+</body>
+{% endblock %}
