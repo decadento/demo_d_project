@@ -25,6 +25,12 @@ def at4(request):
 def m2a2(request):
     return render(request, 'account/m2a2.html')
 
+def emergency_pack(request):
+    return render(request, 'account/emergency_pack.html')
+
+def osint(request):
+    return render(request, 'account/osint.html')
+
 
 def landing_eng(request):
     return render(request, 'main/landing_eng.html')
@@ -45,6 +51,11 @@ def at4_eng(request):
 def m2a2_eng(request):
     return render(request, 'account/m2a2_eng.html')
 
+def emergency_pack_eng(request):
+    return render(request, 'account/emergency_pack_eng.html')
+
+def osint_eng(request):
+    return render(request, 'account/osint_eng.html')
 
 # signup page
 
