@@ -100,7 +100,7 @@ def start_quiz_view_eng(request) -> HttpResponse:
 
 def get_questions_eng(request, is_start=False) -> HttpResponse:
   if is_start:
-    request = _reset_quiz(request)
+    request = _reset_quiz_eng(request)
     question = _get_first_question(request)
   else:
     question = _get_subsequent_question(request)
@@ -157,7 +157,7 @@ def get_finish_eng(request) -> HttpResponse:
   questions_count = Question.objects.filter(quiz=quiz).count()
   score = request.session['score']
   percent = int(score / questions_count * 100)
-  request = _reset_quiz(request)
+  request = _reset_quiz_eng(request)
 
   return render(request, 'quiz/finish_quiz_eng.html', context={
     'questions_count': questions_count, 'score': score, 'percent_score': percent

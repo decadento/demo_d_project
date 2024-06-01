@@ -162,9 +162,7 @@
     pk: 39
     fields:
       question: 10
-      text:
-
- "Розвідка та нагляд"
+      text: "Розвідка та нагляд"
       is_correct: false
 -   model: quiz.answer
     pk: 40
@@ -174,303 +172,1610 @@
       is_correct: false
 
 
+
+
+
+
+
+
+
+
 - model: quiz.quiz
   pk: 2
   fields:
-    name: "Тест на тему М2А2 Бредлі"
+    name: "Тактична медицина"
+
 - model: quiz.question
   pk: 11
   fields:
     quiz: 2
-    text: "Яка основна функція бойової машини піхоти М2А2 Бредлі?"
+    text: "Яка першочергова мета тактичної медицини?"
+
 - model: quiz.answer
   pk: 41
   fields:
     question: 11
-    text: "Транспортування військових відділень"
+    text: "Евакуація поранених з поля бою"
     is_correct: false
+
 - model: quiz.answer
   pk: 42
   fields:
     question: 11
-    text: "Підтримка вогнем для піхоти"
+    text: "Забезпечення безпеки та стабілізації поранених до прибуття медичних служб"
     is_correct: true
+
 - model: quiz.answer
   pk: 43
   fields:
     question: 11
-    text: "Боротьба з повітряними цілями"
+    text: "Надання психологічної підтримки"
     is_correct: false
+
 - model: quiz.answer
   pk: 44
   fields:
     question: 11
-    text: "Зберігання та транспортування боєприпасів"
+    text: "Профілактика інфекцій"
     is_correct: false
+
 - model: quiz.question
   pk: 12
   fields:
     quiz: 2
-    text: "Яку основну зброю використовує М2А2 Бредлі?"
+    text: "Які основні компоненти аптечки першої допомоги?"
+
 - model: quiz.answer
   pk: 45
   fields:
     question: 12
-    text: "30-мм автоматична гармата"
+    text: "Бинти, антисептики, турнікет"
     is_correct: true
+
 - model: quiz.answer
   pk: 46
   fields:
     question: 12
-    text: "Ракетні комплекси"
+    text: "Пластирі, шприци, антибіотики"
     is_correct: false
+
 - model: quiz.answer
   pk: 47
   fields:
     question: 12
-    text: "Автоматична гвинтівка"
+    text: "Вітаміни, знеболюючі, термометр"
     is_correct: false
+
 - model: quiz.answer
   pk: 48
   fields:
     question: 12
-    text: "Гранатомет"
+    text: "Шовний матеріал, інгалятор, респіратор"
     is_correct: false
+
 - model: quiz.question
   pk: 13
   fields:
     quiz: 2
-    text: "Яка максимальна швидкість руху М2А2 Бредлі на дорозі?"
+    text: "Як правильно накладати турнікет на кінцівку?"
+
 - model: quiz.answer
   pk: 49
   fields:
     question: 13
-    text: "65 км/год"
+    text: "Накласти турнікет безпосередньо на рану"
     is_correct: false
+
 - model: quiz.answer
   pk: 50
   fields:
     question: 13
-    text: "70 км/год"
-    is_correct: false
+    text: "Накласти турнікет вище місця кровотечі"
+    is_correct: true
+
 - model: quiz.answer
   pk: 51
   fields:
     question: 13
-    text: "60 км/год"
-    is_correct: true
+    text: "Накласти турнікет нижче місця кровотечі"
+    is_correct: false
+
 - model: quiz.answer
   pk: 52
   fields:
     question: 13
-    text: "75 км/год"
+    text: "Накласти турнікет в зоні болю"
     is_correct: false
+
 - model: quiz.question
   pk: 14
   fields:
     quiz: 2
-    text: "Яка основна характеристика бронювання М2А2 Бредлі?"
+    text: "Який перший крок при наданні допомоги непритомній людині?"
+
 - model: quiz.answer
   pk: 53
   fields:
     question: 14
-    text: "Панелі броні товщиною 20 мм"
+    text: "Розпочати серцево-легеневу реанімацію"
     is_correct: false
+
 - model: quiz.answer
   pk: 54
   fields:
     question: 14
-    text: "Панелі броні товщиною 50 мм"
-    is_correct: false
+    text: "Перевірити дихальні шляхи та дихання"
+    is_correct: true
+
 - model: quiz.answer
   pk: 55
   fields:
     question: 14
-    text: "Панелі броні товщиною 25 мм"
-    is_correct: true
+    text: "Викликати швидку допомогу"
+    is_correct: false
+
 - model: quiz.answer
   pk: 56
   fields:
     question: 14
-    text: "Панелі броні товщиною 30 мм"
+    text: "Зробити штучне дихання"
     is_correct: false
+
 - model: quiz.question
   pk: 15
   fields:
     quiz: 2
-    text: "Яка максимальна кількість військовослужбовців, яку може перевозити М2А2 Бредлі?"
+    text: "Як слід діяти при переломі кінцівки?"
+
 - model: quiz.answer
   pk: 57
   fields:
     question: 15
-    text: "6 осіб"
-    is_correct: false
+    text: "Забезпечити нерухомість кінцівки"
+    is_correct: true
+
 - model: quiz.answer
   pk: 58
   fields:
     question: 15
-    text: "8 осіб"
-    is_correct: true
+    text: "Накласти тугу пов'язку"
+    is_correct: false
+
 - model: quiz.answer
   pk: 59
   fields:
     question: 15
-    text: "10 осіб"
+    text: "Зігріти ушкоджену ділянку"
     is_correct: false
+
 - model: quiz.answer
   pk: 60
   fields:
     question: 15
-    text: "12 осіб"
+    text: "Прикласти холод"
     is_correct: false
 
-    
-- model: quiz.quiz
-  pk: 3
-  fields:
-    name: "Тест на тему FPV-дрони камікадзе"
 - model: quiz.question
   pk: 16
   fields:
-    quiz: 3
-    text: "Що означає абревіатура 'FPV' у контексті дронів?"
+    quiz: 2
+    text: "Який тип кровотечі є найбільш небезпечним?"
+
 - model: quiz.answer
   pk: 61
   fields:
     question: 16
-    text: "Перегляд з першої особи"
+    text: "Артеріальна кровотеча"
     is_correct: true
+
 - model: quiz.answer
   pk: 62
   fields:
     question: 16
-    text: "Перевірка перед вильотом"
+    text: "Венозна кровотеча"
     is_correct: false
+
 - model: quiz.answer
   pk: 63
   fields:
     question: 16
-    text: "Передавання відео у реальному часі"
+    text: "Капілярна кровотеча"
     is_correct: false
+
 - model: quiz.answer
   pk: 64
   fields:
     question: 16
-    text: "Програмування автопілота"
+    text: "Паренхіматозна кровотеча"
     is_correct: false
+
 - model: quiz.question
   pk: 17
   fields:
-    quiz: 3
-    text: "Чим відрізняється FPV-дрон камікадзе від звичайного FPV-дрону?"
+    quiz: 2
+    text: "Який засіб використовується для тимчасової зупинки кровотечі?"
+
 - model: quiz.answer
   pk: 65
   fields:
     question: 17
-    text: "Має вибухонебезпечний пристрій"
+    text: "Турнікет"
     is_correct: true
+
 - model: quiz.answer
   pk: 66
   fields:
     question: 17
-    text: "Має пілота на борту"
+    text: "Бинт"
     is_correct: false
+
 - model: quiz.answer
   pk: 67
   fields:
     question: 17
-    text: "Має збільшену дальність польоту"
+    text: "Пластир"
     is_correct: false
+
 - model: quiz.answer
   pk: 68
   fields:
     question: 17
-    text: "Має вбудовану камеру високої роздільної здатності"
+    text: "Шина"
     is_correct: false
+
+
+
+
+
+
+
+
+
+- model: quiz.quiz
+  pk: 3
+  fields:
+    name: "FPV-дрони"
+
 - model: quiz.question
   pk: 18
   fields:
     quiz: 3
-    text: "Яка можлива мета використання FPV-дронів камікадзе?"
+    text: "Що означає абревіатура FPV?"
+
 - model: quiz.answer
   pk: 69
   fields:
     question: 18
-    text: "Виконання військових операцій"
+    text: "First Person View"
     is_correct: true
+
 - model: quiz.answer
   pk: 70
   fields:
     question: 18
-    text: "Спостереження за природними катаклізмами"
+    text: "Fast Propeller Vehicle"
     is_correct: false
+
 - model: quiz.answer
   pk: 71
   fields:
     question: 18
-    text: "Подальша експлуатація у цивільних цілях"
+    text: "Flight Power Voltage"
     is_correct: false
+
 - model: quiz.answer
   pk: 72
   fields:
     question: 18
-    text: "Зйомка пейзажів"
+    text: "Full Pilot Vision"
     is_correct: false
+
 - model: quiz.question
   pk: 19
   fields:
     quiz: 3
-    text: "Які можливі заходи безпеки повинні бути вжиті при роботі з FPV-дронами камікадзе?"
+    text: "Які основні компоненти FPV-дрону?"
+
 - model: quiz.answer
   pk: 73
   fields:
     question: 19
-    text: "Обмеження доступу до дронів"
+    text: "Камера, відеопередавач, приймач, контролер польоту"
     is_correct: true
+
 - model: quiz.answer
   pk: 74
   fields:
     question: 19
-    text: "Завжди тримайте FPV-дрон поза зоною видимості"
-    is_correct: true
+    text: "Камера, GPS-модуль, антена, датчик руху"
+    is_correct: false
+
 - model: quiz.answer
   pk: 75
   fields:
     question: 19
-    text: "Використання безпілотних літальних апаратів"
+    text: "Приймач, антена, батарея, датчик температури"
     is_correct: false
+
 - model: quiz.answer
   pk: 76
   fields:
     question: 19
-    text: "Використання дронів лише у відкритих просторах"
+    text: "Контролер польоту, GPS-модуль, датчик руху, камера"
     is_correct: false
+
 - model: quiz.question
   pk: 20
   fields:
     quiz: 3
-    text: "Які можливі наслідки можуть виникнути від використання FPV-дронів камікадзе?"
+    text: "Яка основна перевага використання FPV-дронів?"
+
 - model: quiz.answer
   pk: 77
   fields:
     question: 20
-    text: "Цивільні та військові жертви"
-    is_correct: true
+    text: "Низька вартість"
+    is_correct: false
+
 - model: quiz.answer
   pk: 78
   fields:
     question: 20
-    text: "Загублені дрони"
-    is_correct: false
+    text: "Покращена точність керування та огляд в реальному часі"
+    is_correct: true
+
 - model: quiz.answer
   pk: 79
   fields:
     question: 20
-    text: "Порушення приватності"
+    text: "Збільшена тривалість польоту"
     is_correct: false
+
 - model: quiz.answer
   pk: 80
   fields:
     question: 20
-    text: "Технічні несправності"
+    text: "Підвищена швидкість"
+    is_correct: false
+
+- model: quiz.question
+  pk: 21
+  fields:
+    quiz: 3
+    text: "Який стандартний діапазон частот використовується для FPV?"
+
+- model: quiz.answer
+  pk: 81
+  fields:
+    question: 21
+    text: "2.4 GHz"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 82
+  fields:
+    question: 21
+    text: "5.8 GHz"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 83
+  fields:
+    question: 21
+    text: "1.2 GHz"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 84
+  fields:
+    question: 21
+    text: "900 MHz"
+    is_correct: false
+
+- model: quiz.question
+  pk: 22
+  fields:
+    quiz: 3
+    text: "Що забезпечує кращу якість відеозображення на FPV-дроні?"
+
+- model: quiz.answer
+  pk: 85
+  fields:
+    question: 22
+    text: "Використання високоякісної камери та стабільного відеопередавача"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 86
+  fields:
+    question: 22
+    text: "Використання потужної батареї"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 87
+  fields:
+    question: 22
+    text: "Збільшення швидкості польоту"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 88
+  fields:
+    question: 22
+    text: "Зменшення ваги дрону"
+    is_correct: false
+
+- model: quiz.question
+  pk: 23
+  fields:
+    quiz: 3
+    text: "Який час реакції вважається оптимальним для FPV-дрону?"
+
+- model: quiz.answer
+  pk: 89
+  fields:
+    question: 23
+    text: "30 мілісекунд"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 90
+  fields:
+    question: 23
+    text: "50 мілісекунд"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 91
+  fields:
+    question: 23
+    text: "100 мілісекунд"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 92
+  fields:
+    question: 23
+    text: "200 мілісекунд"
+    is_correct: false
+
+- model: quiz.question
+  pk: 24
+  fields:
+    quiz: 3
+    text: "Які заходи безпеки необхідно вживати при використанні FPV-дронів?"
+
+- model: quiz.answer
+  pk: 93
+  fields:
+    question: 24
+    text: "Перевірка дрону перед польотом"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 94
+  fields:
+    question: 24
+    text: "Літання в межах видимості"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 95
+  fields:
+    question: 24
+    text: "Уникнення польотів в густонаселених районах"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 96
+  fields:
+    question: 24
+    text: "Літання під час несприятливих погодних умов"
+    is_correct: false
+
+
+
+
+
+
+
+
+- model: quiz.quiz
+  pk: 4
+  fields:
+    name: "M2A2 Bradley"
+
+- model: quiz.question
+  pk: 25
+  fields:
+    quiz: 4
+    text: "Яка основна функція M2A2 Bradley?"
+
+- model: quiz.answer
+  pk: 97
+  fields:
+    question: 25
+    text: "Транспортування військ та вогнева підтримка"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 98
+  fields:
+    question: 25
+    text: "Розвідка та спостереження"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 99
+  fields:
+    question: 25
+    text: "Ремонт та евакуація техніки"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 100
+  fields:
+    question: 25
+    text: "Протиповітряна оборона"
+    is_correct: false
+
+- model: quiz.question
+  pk: 26
+  fields:
+    quiz: 4
+    text: "Яке основне озброєння встановлене на M2A2 Bradley?"
+
+- model: quiz.answer
+  pk: 101
+  fields:
+    question: 26
+    text: "25 мм автоматична гармата M242 Bushmaster"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 102
+  fields:
+    question: 26
+    text: "120 мм танкова гармата"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 103
+  fields:
+    question: 26
+    text: "7.62 мм кулемет"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 104
+  fields:
+    question: 26
+    text: "40 мм автоматичний гранатомет"
+    is_correct: false
+
+- model: quiz.question
+  pk: 27
+  fields:
+    quiz: 4
+    text: "Яка максимальна швидкість M2A2 Bradley на шосе?"
+
+- model: quiz.answer
+  pk: 105
+  fields:
+    question: 27
+    text: "66 км/год"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 106
+  fields:
+    question: 27
+    text: "80 км/год"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 107
+  fields:
+    question: 27
+    text: "100 км/год"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 108
+  fields:
+    question: 27
+    text: "55 км/год"
+    is_correct: false
+
+- model: quiz.question
+  pk: 28
+  fields:
+    quiz: 4
+    text: "Яка кількість солдатів може транспортувати M2A2 Bradley?"
+
+- model: quiz.answer
+  pk: 109
+  fields:
+    question: 28
+    text: "7 солдатів"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 110
+  fields:
+    question: 28
+    text: "10 солдатів"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 111
+  fields:
+    question: 28
+    text: "4 солдати"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 112
+  fields:
+    question: 28
+    text: "12 солдатів"
+    is_correct: false
+
+- model: quiz.question
+  pk: 29
+  fields:
+    quiz: 4
+    text: "Який тип броні використовується на M2A2 Bradley?"
+
+- model: quiz.answer
+  pk: 113
+  fields:
+    question: 29
+    text: "Композитна броня"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 114
+  fields:
+    question: 29
+    text: "Чавунна броня"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 115
+  fields:
+    question: 29
+    text: "Алюмінієва броня"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 116
+  fields:
+    question: 29
+    text: "Титановий сплав"
+    is_correct: false
+
+
+
+
+
+
+
+
+- model: quiz.quiz
+  pk: 5
+  fields:
+    name: "OSINT технології"
+
+- model: quiz.question
+  pk: 30
+  fields:
+    quiz: 5
+    text: "Що означає абревіатура OSINT?"
+
+- model: quiz.answer
+  pk: 117
+  fields:
+    question: 30
+    text: "Open Source Intelligence"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 118
+  fields:
+    question: 30
+    text: "Operational Security Intelligence"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 119
+  fields:
+    question: 30
+    text: "Online Security Integration"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 120
+  fields:
+    question: 30
+    text: "Operational Support Information"
+    is_correct: false
+
+- model: quiz.question
+  pk: 31
+  fields:
+    quiz: 5
+    text: "Які основні джерела інформації використовуються в OSINT?"
+
+- model: quiz.answer
+  pk: 121
+  fields:
+    question: 31
+    text: "Публічні вебсайти, соціальні медіа, урядові документи"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 122
+  fields:
+    question: 31
+    text: "Приватні бази даних, внутрішні документи компаній, хакерські форуми"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 123
+  fields:
+    question: 31
+    text: "Військові звіти, закриті чати, секретні документи"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 124
+  fields:
+    question: 31
+    text: "Газети, телебачення, радіо"
+    is_correct: false
+
+- model: quiz.question
+  pk: 32
+  fields:
+    quiz: 5
+    text: "Яка основна мета OSINT?"
+
+- model: quiz.answer
+  pk: 125
+  fields:
+    question: 32
+    text: "Збір та аналіз інформації з відкритих джерел для отримання розвідувальних даних"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 126
+  fields:
+    question: 32
+    text: "Моніторинг внутрішніх комунікацій для виявлення загроз"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 127
+  fields:
+    question: 32
+    text: "Створення фальшивих новин для впливу на громадську думку"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 128
+  fields:
+    question: 32
+    text: "Забезпечення кібербезпеки організації"
+    is_correct: false
+
+- model: quiz.question
+  pk: 33
+  fields:
+    quiz: 5
+    text: "Які інструменти часто використовуються в OSINT?"
+
+- model: quiz.answer
+  pk: 129
+  fields:
+    question: 33
+    text: "Maltego, Shodan, Google Dorks"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 130
+  fields:
+    question: 33
+    text: "Wireshark, Metasploit, Nmap"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 131
+  fields:
+    question: 33
+    text: "Adobe Photoshop, Blender, Unity"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 132
+  fields:
+    question: 33
+    text: "Microsoft Excel, PowerPoint, Word"
+    is_correct: false
+
+- model: quiz.question
+  pk: 34
+  fields:
+    quiz: 5
+    text: "Які етичні міркування важливі для OSINT-аналітиків?"
+
+- model: quiz.answer
+  pk: 133
+  fields:
+    question: 34
+    text: "Дотримання законності та конфіденційності"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 134
+  fields:
+    question: 34
+    text: "Надання доступу до секретних даних"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 135
+  fields:
+    question: 34
+    text: "Використання фальшивих акаунтів для збору інформації"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 136
+  fields:
+    question: 34
+    text: "Продавання зібраних даних третім особам"
+    is_correct: false
+
+
+
+
+
+
+
+
+
+
+
+- model: quiz.quiz
+  pk: 6
+  fields:
+    name: "Тривожна валіза на випадок війни"
+
+- model: quiz.question
+  pk: 35
+  fields:
+    quiz: 6
+    text: "Які документи повинні бути в тривожній валізі?"
+
+- model: quiz.answer
+  pk: 137
+  fields:
+    question: 35
+    text: "Паспорт, ідентифікаційний код, медична карта"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 138
+  fields:
+    question: 35
+    text: "Паспорт, свідоцтво про народження, диплом"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 139
+  fields:
+    question: 35
+    text: "Посвідчення водія, податкові декларації, страховка"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 140
+  fields:
+    question: 35
+    text: "Кредитні карти, банківські виписки, свідоцтво про шлюб"
+    is_correct: false
+
+- model: quiz.question
+  pk: 36
+  fields:
+    quiz: 6
+    text: "Які засоби особистої гігієни повинні бути в тривожній валізі?"
+
+- model: quiz.answer
+  pk: 141
+  fields:
+    question: 36
+    text: "Зубна щітка, зубна паста, мило, рушник"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 142
+  fields:
+    question: 36
+    text: "Шампунь, кондиціонер, лак для волосся, дезодорант"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 143
+  fields:
+    question: 36
+    text: "Пудра, помада, крем для рук, парфуми"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 144
+  fields:
+    question: 36
+    text: "Гребінець, ножиці, пінцет, манікюрний набір"
+    is_correct: false
+
+- model: quiz.question
+  pk: 37
+  fields:
+    quiz: 6
+    text: "Які ліки повинні бути в тривожній валізі?"
+
+- model: quiz.answer
+  pk: 145
+  fields:
+    question: 37
+    text: "Анальгетики, антибіотики, антисептики, ліки від хронічних захворювань"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 146
+  fields:
+    question: 37
+    text: "Вітаміни, мінерали, антидепресанти, імуностимулятори"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 147
+  fields:
+    question: 37
+    text: "Гомеопатичні засоби, трав'яні настої, пробіотики"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 148
+  fields:
+    question: 37
+    text: "Протиалергічні засоби, препарати для схуднення, спортивне харчування"
+    is_correct: false
+
+- model: quiz.question
+  pk: 38
+  fields:
+    quiz: 6
+    text: "Яке спорядження має бути в тривожній валізі?"
+
+- model: quiz.answer
+  pk: 149
+  fields:
+    question: 38
+    text: "Ніж, ліхтарик, запальничка, багатофункціональний інструмент"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 150
+  fields:
+    question: 38
+    text: "Молоток, викрутка, плоскогубці, паяльник"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 151
+  fields:
+    question: 38
+    text: "Пензлі, фарби, олівці, скетчбук"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 152
+  fields:
+    question: 38
+    text: "Комп'ютерна миша, клавіатура, веб-камера, мікрофон"
+    is_correct: false
+
+- model: quiz.question
+  pk: 39
+  fields:
+    quiz: 6
+    text: "Які засоби зв'язку повинні бути в тривожній валізі?"
+
+- model: quiz.answer
+  pk: 153
+  fields:
+    question: 39
+    text: "Мобільний телефон, зарядний пристрій, додатковий акумулятор"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 154
+  fields:
+    question: 39
+    text: "Радіоприймач, телевізор, супутниковий ресивер"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 155
+  fields:
+    question: 39
+    text: "Планшет, ноутбук, принтер"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 156
+  fields:
+    question: 39
+    text: "Мегафон, гучномовець, диктофон"
+    is_correct: false
+
+- model: quiz.question
+  pk: 40
+  fields:
+    quiz: 6
+    text: "Які продукти харчування слід включити в тривожну валізу?"
+
+- model: quiz.answer
+  pk: 157
+  fields:
+    question: 40
+    text: "Консерви, сухофрукти, енергетичні батончики, питна вода"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 158
+  fields:
+    question: 40
+    text: "Свежі овочі, м'ясні продукти, молочні продукти"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 159
+  fields:
+    question: 40
+    text: "Шоколад, газовані напої, чіпси"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 160
+  fields:
+    question: 40
+    text: "Заморожені продукти, готові обіди, консервовані напої"
+    is_correct: false
+
+- model: quiz.question
+  pk: 41
+  fields:
+    quiz: 6
+    text: "Які предмети одягу повинні бути в тривожній валізі?"
+
+- model: quiz.answer
+  pk: 161
+  fields:
+    question: 41
+    text: "Змінна білизна, теплий одяг, зручне взуття"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 162
+  fields:
+    question: 41
+    text: "Діловий костюм, краватка, офіційні туфлі"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 163
+  fields:
+    question: 41
+    text: "Спортивний костюм, шорти, капці"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 164
+  fields:
+    question: 41
+    text: "Нічна сорочка, халат, тапочки"
+    is_correct: false
+
+- model: quiz.question
+  pk: 42
+  fields:
+    quiz: 6
+    text: "Які фінансові засоби слід включити в тривожну валізу?"
+
+- model: quiz.answer
+  pk: 165
+  fields:
+    question: 42
+    text: "Готівка, кредитні карти, банківські чеки"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 166
+  fields:
+    question: 42
+    text: "Дорогоцінні метали, біткоїни, інвестиційні сертифікати"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 167
+  fields:
+    question: 42
+    text: "Рахунки за комунальні послуги, квитанції, страхові поліси"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 168
+  fields:
+    question: 42
+    text: "Фінансові звіти, документи на нерухомість, акції"
+    is_correct: false
+
+- model: quiz.question
+  pk: 43
+  fields:
+    quiz: 6
+    text: "Які засоби першої допомоги повинні бути в тривожній валізі?"
+
+- model: quiz.answer
+  pk: 169
+  fields:
+    question: 43
+    text: "Бинти, антисептики, пластирі, ножиці, медичні рукавички"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 170
+  fields:
+    question: 43
+    text: "Хірургічні інструменти, шви, анестезія"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 171
+  fields:
+    question: 43
+    text: "Косметичні засоби, знеболюючі креми, пігулки для сну"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 172
+  fields:
+    question: 43
+    text: "Засоби для догляду за шкірою, вітамінні комплекси, спортивні добавки"
+    is_correct: false
+
+- model: quiz.question
+  pk: 44
+  fields:
+    quiz: 6
+    text: "Які інструменти повинні бути в тривожній валізі?"
+
+- model: quiz.answer
+  pk: 173
+  fields:
+    question: 44
+    text: "Ніж, багатофункціональний інструмент, ліхтарик, компас"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 174
+  fields:
+    question: 44
+    text: "Молоток, викрутка, паяльник, електропила"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 175
+  fields:
+    question: 44
+    text: "Садові ножиці, лійка, насіння, добрива"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 176
+  fields:
+    question: 44
+    text: "Міксер, кавоварка, блендер, тостер"
+    is_correct: false
+
+
+
+
+
+
+
+
+
+- model: quiz.quiz
+  pk: 7
+  fields:
+    name: "Військовий турнікет"
+
+- model: quiz.question
+  pk: 45
+  fields:
+    quiz: 7
+    text: "Для чого використовується військовий турнікет?"
+
+- model: quiz.answer
+  pk: 177
+  fields:
+    question: 45
+    text: "Для зупинки масивної кровотечі з кінцівок"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 178
+  fields:
+    question: 45
+    text: "Для фіксації переломів"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 179
+  fields:
+    question: 45
+    text: "Для зняття болю"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 180
+  fields:
+    question: 45
+    text: "Для перевірки пульсу"
+    is_correct: false
+
+- model: quiz.question
+  pk: 46
+  fields:
+    quiz: 7
+    text: "Який найважливіший елемент конструкції турнікета?"
+
+- model: quiz.answer
+  pk: 181
+  fields:
+    question: 46
+    text: "Ручка-закрутка (виндлас)"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 182
+  fields:
+    question: 46
+    text: "Карабін"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 183
+  fields:
+    question: 46
+    text: "Фіксуюча пластина"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 184
+  fields:
+    question: 46
+    text: "Поясна застібка"
+    is_correct: false
+
+- model: quiz.question
+  pk: 47
+  fields:
+    quiz: 7
+    text: "На якій відстані від рани слід накладати турнікет?"
+
+- model: quiz.answer
+  pk: 185
+  fields:
+    question: 47
+    text: "2-3 сантиметри вище рани"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 186
+  fields:
+    question: 47
+    text: "Прямо на рану"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 187
+  fields:
+    question: 47
+    text: "10 сантиметрів нижче рани"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 188
+  fields:
+    question: 47
+    text: "Безпосередньо на суглобі"
+    is_correct: false
+
+- model: quiz.question
+  pk: 48
+  fields:
+    quiz: 7
+    text: "Як довго можна тримати турнікет накладеним на кінцівку?"
+
+- model: quiz.answer
+  pk: 189
+  fields:
+    question: 48
+    text: "Не більше 2 годин"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 190
+  fields:
+    question: 48
+    text: "До 30 хвилин"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 191
+  fields:
+    question: 48
+    text: "Без обмежень за часом"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 192
+  fields:
+    question: 48
+    text: "Не більше 24 годин"
+    is_correct: false
+
+- model: quiz.question
+  pk: 49
+  fields:
+    quiz: 7
+    text: "Які ознаки правильно накладеного турнікета?"
+
+- model: quiz.answer
+  pk: 193
+  fields:
+    question: 49
+    text: "Зупинка кровотечі, відсутність пульсу на кінцівці"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 194
+  fields:
+    question: 49
+    text: "Відчуття болю, набряк кінцівки"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 195
+  fields:
+    question: 49
+    text: "Підвищення температури тіла"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 196
+  fields:
+    question: 49
+    text: "Поява синців навколо рани"
+    is_correct: false
+
+- model: quiz.question
+  pk: 50
+  fields:
+    quiz: 7
+    text: "Що робити після накладення турнікета?"
+
+- model: quiz.answer
+  pk: 197
+  fields:
+    question: 50
+    text: "Записати час накладення турнікета"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 198
+  fields:
+    question: 50
+    text: "Намотати бинт поверх турнікета"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 199
+  fields:
+    question: 50
+    text: "Зняти турнікет через 10 хвилин"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 200
+  fields:
+    question: 50
+    text: "Почекати, поки кінцівка почне знову кровоточити"
+    is_correct: false
+
+- model: quiz.question
+  pk: 51
+  fields:
+    quiz: 7
+    text: "Які типи турнікетів найчастіше використовуються в армії?"
+
+- model: quiz.answer
+  pk: 201
+  fields:
+    question: 51
+    text: "CAT, SOF-T, SAM XT"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 202
+  fields:
+    question: 51
+    text: "ACE, MED, TAN"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 203
+  fields:
+    question: 51
+    text: "XYZ, ABC, 123"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 204
+  fields:
+    question: 51
+    text: "TOUR, NET, STRAP"
+    is_correct: false
+
+- model: quiz.question
+  pk: 52
+  fields:
+    quiz: 7
+    text: "Який турнікет рекомендується для самостійного використання?"
+
+- model: quiz.answer
+  pk: 205
+  fields:
+    question: 52
+    text: "CAT (Combat Application Tourniquet)"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 206
+  fields:
+    question: 52
+    text: "ACE (Advanced Combat Tourniquet)"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 207
+  fields:
+    question: 52
+    text: "XYZ (Extreme Yield Tourniquet)"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 208
+  fields:
+    question: 52
+    text: "NET (Neutral Emergency Tourniquet)"
+    is_correct: false
+
+- model: quiz.question
+  pk: 53
+  fields:
+    quiz: 7
+    text: "Який колір турнікетів найчастіше використовується у військових умовах?"
+
+- model: quiz.answer
+  pk: 209
+  fields:
+    question: 53
+    text: "Чорний"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 210
+  fields:
+    question: 53
+    text: "Червоний"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 211
+  fields:
+    question: 53
+    text: "Синій"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 212
+  fields:
+    question: 53
+    text: "Зелений"
+    is_correct: false
+
+- model: quiz.question
+  pk: 54
+  fields:
+    quiz: 7
+    text: "Чи можна використовувати імпровізовані турнікети?"
+
+- model: quiz.answer
+  pk: 213
+  fields:
+    question: 54
+    text: "Так, якщо немає стандартного турнікета"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 214
+  fields:
+    question: 54
+    text: "Ні, завжди потрібен стандартний турнікет"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 215
+  fields:
+    question: 54
+    text: "Так, але тільки для верхніх кінцівок"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 216
+  fields:
+    question: 54
+    text: "Ні, це небезпечно для здоров'я"
+    is_correct: false
+
+- model: quiz.question
+  pk: 55
+  fields:
+    quiz: 7
+    text: "Які матеріали підходять для імпровізованого турнікета?"
+
+- model: quiz.answer
+  pk: 217
+  fields:
+    question: 55
+    text: "Міцна тканина, ремені, шнури"
+    is_correct: true
+
+- model: quiz.answer
+  pk: 218
+  fields:
+    question: 55
+    text: "Папір, пластик, тонкі мотузки"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 219
+  fields:
+    question: 55
+    text: "Скло, металеві дроти, гумові смужки"
+    is_correct: false
+
+- model: quiz.answer
+  pk: 220
+  fields:
+    question: 55
+    text: "Шовкові стрічки, вата, фольга"
     is_correct: false

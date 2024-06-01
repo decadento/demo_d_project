@@ -1,12 +1,12 @@
 
 <div>
-    <p>Тест завершено. Ви набрали {{ percent_score }}%</p>
-    <p>({{ score }} правильних / {{ questions_count }} питань)</p>
+    <p>Quiz finished. You scored: {{ percent_score }}%</p>
+    <p>({{ score }} correct / {{ questions_count }} questions)</p>
   
 
     
     <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="{% url 'start' %}">
-      Почати новий тест
+      Start new quiz
     </a>
     <div class="rounded-video">
       <video muted autoplay loop style="max-width: 100%; height: 200px">
