@@ -90,11 +90,11 @@
 <form id="topic-container" hx-post="{% url 'get-questions' %}/start" class="container">
   {% csrf_token %}
   <h2 id="heading-text" class="text-center">
-    What would you like to learn about?
+    Перевірте себе!
   </h2>
   <div id="topic-list" class="text-center">
 
-    <p>Please pick a topic from the below topics</p>
+    <p>Оберіть бажану тему для перевірки:</p>
 
     <ol class="list-unstyled">
 
@@ -108,7 +108,7 @@
       {% endfor %}
 
       {% if not topics %}
-      <li>No topics available. Have you added topics into your database?</li>
+      <li>нема доступних тестів. Завітайте пізніше.</li>
       {% endif %}
 
     </ol>
