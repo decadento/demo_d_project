@@ -219,9 +219,9 @@
             </h2>
             
             {% if user.is_authenticated %}
-                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="{% url 'learn' %}" target="_blank">Check on articles</a>
+                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="{% url 'learn_eng' %}">Check on articles</a>
             {% else %}
-                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="{% url 'signup' %}">Sign Up</a>
+                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="{% url 'signup_eng' %}">Sign Up</a>
             {% endif %}
         </div>
     </div>
