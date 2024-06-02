@@ -2,8 +2,6 @@
 
 {% block extra_css %}
     <style>
-        
-        /* Ваші стилі для форми логіну */
         .login-container {
             margin: 50px auto;
             max-width: 400px;
@@ -15,22 +13,18 @@
             margin-top: 140px;
             
         }
-
         .login-container:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-
         .login-form .form-group {
             margin-bottom: 20px;
         }
-
         .login-form label {
             display: block;
             font-weight: bold;
             margin-bottom: 10px;
             color: #333;
         }
-
         .login-form input[type="text"],
         .login-form input[type="password"] {
             width: 100%;
@@ -41,13 +35,11 @@
             font-size: 16px;
             color: #666;
         }
-
         .login-form input[type="text"]:focus,
         .login-form input[type="password"]:focus {
             border-color: #75805f;
             outline: none;
         }
-
         .login-form .btn-primary {
             width: 100%;
             padding: 12px;
@@ -58,27 +50,21 @@
             font-size: 16px;
             cursor: pointer;
         }
-
         .login-form .btn-primary:hover {
             background-color: #525A43;
         }
-
         .signup-link {
             margin-top: 15px;
             text-align: center;
             color: #666;
         }
-
         .signup-link a {
             color: #75805f;
             text-decoration: none;
         }
-
         .signup-link a:hover {
             text-decoration: underline;
         }
-
-        /* Стилі для футера */
         footer {
             position: fixed;
             left: 0;
@@ -90,7 +76,6 @@
             padding: 10px 0;
             
         }
-
     </style>
 {% endblock %}
 
@@ -113,8 +98,6 @@
             <button type="submit" class="btn btn-primary">Ввійти</button>
             <p class="signup-link">Не маєте аккаунта? <a href="{% url 'signup' %}">Створіть </a></p>
         </form>
-        
     </div>
-    
 
 {% endblock %}

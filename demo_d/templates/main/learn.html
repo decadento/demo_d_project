@@ -1,28 +1,19 @@
 {% extends 'main/base.html' %}
 
-
 {% block extra_css %}
 <style>
-
-    
     .learn-container {
         margin: 50px auto;
-        
         margin-top: 100px;
     }
     .learn-categories {
-        width: 75%; /* Займатиме 70% ширини */
-        margin: 0 auto; /* Відцентрувати відносно батьківського контейнера */
-    }
-    
-
-    
+        width: 75%; 
+        margin: 0 auto; 
+    } 
     .card-img-top {
-        height: 200px; /* Встановіть фіксовану висоту для зображення */
-        object-fit: cover; /* Зображення буде змінено так, щоб воно повністю заповнило контейнер без втрати пропорцій */
+        height: 200px; 
+        object-fit: cover; 
     }
-   
-
 </style>
 {% endblock %}
 
@@ -36,33 +27,29 @@
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
-            <div class="card shadow-sm">
-                <img src="/media/samples/fpv_1.jpeg" class="card-img-top" alt="Зображення">
-                <div class="card-body">
-                <p class="card-text">Розглянемо, в чому полягає особливість дронів FPV та їх бойові можливості по ураженню техніки та живої сили.
-
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <a class="btn btn-primary" href="{% url 'fpv' %}">Читати</a>
-                    <small class="text-body-secondary">27.01.2023</small>
+                <div class="card shadow-sm">
+                    <img src="/media/samples/fpv_1.jpeg" class="card-img-top" alt="Зображення">
+                    <div class="card-body">
+                        <p class="card-text">Розглянемо, в чому полягає особливість дронів FPV та їх бойові можливості по ураженню техніки та живої сили.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a class="btn btn-primary" href="{% url 'fpv' %}">Читати</a>
+                            <small class="text-body-secondary">27.01.2023</small>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
             </div>
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ATACMSMay2006_%28cropped%29.jpg/800px-ATACMSMay2006_%28cropped%29.jpg" class="card-img-top" alt="Зображення">
-                    <div class="card-body">
-                    <p class="card-text">Ефективність сучасних ракетних систем.
-    
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <a class="btn btn-primary" href="{% url 'fpv' %}">Читати</a>
-                        <small class="text-body-secondary">27.01.2023</small>
-                    </div>
-                    </div>
+                        <img src="https://armyinform.com.ua/wp-content/uploads/2022/07/granatomet-at4_1.webp" class="card-img-top" alt="Зображення">
+                        <div class="card-body">
+                            <p class="card-text">Ручний протитанковий комплекс AT-4.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a class="btn btn-primary" href="{% url 'at4' %}">Читати</a>
+                                <small class="text-body-secondary">17.08.2022</small>
+                            </div>
+                        </div>
                 </div>
-                </div>
+            </div>
             
             <div class="col">
                 <div class="card shadow-sm">

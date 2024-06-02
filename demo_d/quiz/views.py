@@ -13,7 +13,6 @@ def start_quiz_view(request) -> HttpResponse:
     request, 'quiz/start_quiz.html', context={'topics': topics}
   )
 
-
 def get_questions(request, is_start=False) -> HttpResponse:
   if is_start:
     request = _reset_quiz(request)
@@ -24,29 +23,25 @@ def get_questions(request, is_start=False) -> HttpResponse:
       return get_finish(request)
 
   answers = Answer.objects.filter(question=question)
-  request.session['question_id'] = question.id  # Update session state with current question id.
+  request.session['question_id'] = question.id 
 
   return render(request, 'quiz/quiz_question.html', context={
     'question': question, 'answers': answers
   })
 
-
 def _get_first_question(request) -> Question:
   quiz_id = request.POST['quiz_id']
   return Question.objects.filter(quiz_id=quiz_id).order_by('id').first()
 
-
 def _get_subsequent_question(request) -> Optional[Question]:
   quiz_id = request.POST['quiz_id']
   previous_question_id = request.session['question_id']
-
   try:
     return Question.objects.filter(
       quiz_id=quiz_id, id__gt=previous_question_id
     ).order_by('id').first()
-  except Question.DoesNotExist:  # I.e., there are no more questions.
+  except Question.DoesNotExist:
     return None
-
 
 def get_answer(request) -> HttpResponse:
   submitted_answer_id = request.POST['answer_id']
@@ -59,7 +54,6 @@ def get_answer(request) -> HttpResponse:
     correct_answer = Answer.objects.get(
       question_id=submitted_answer.question_id, is_correct=True
     )
-
   return render(
     request, 'quiz/quiz_answer.html', context={
       'submitted_answer': submitted_answer,

@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', event => {
 
-    // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
         new bootstrap.ScrollSpy(document.body, {
@@ -9,7 +8,6 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
@@ -22,12 +20,11 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Hide navbar on scroll
     let lastScrollTop = 0;
     window.addEventListener('scroll', () => {
         let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
         if (currentScroll > lastScrollTop) {
-            mainNav.style.top = "-80px"; // Adjust this value based on the height of your navbar
+            mainNav.style.top = "-80px"; 
         } else {
             mainNav.style.top = "0";
         }

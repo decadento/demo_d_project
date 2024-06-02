@@ -78,26 +78,18 @@
 {% endblock %}
 
 {% block content %}
-
   <meta charset="UTF-8">
-  <title>Пройти спеціалізовану тематичну перевірку на знання </title>
+  <title>Пройти спеціалізовану тематичну перевірку на знання</title>
   <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
   
-  
-
-
-
 <form id="topic-container" hx-post="{% url 'get-questions' %}/start" class="container">
   {% csrf_token %}
   <h2 id="heading-text" class="text-center">
     Перевірте себе!
   </h2>
   <div id="topic-list" class="text-center">
-
     <p>Оберіть бажану тему для перевірки:</p>
-
     <ol class="list-unstyled">
-
       {% for topic in topics %}
       <li class="option">
         <div class="form-check">
@@ -106,23 +98,13 @@
         </div>
       </li>
       {% endfor %}
-
       {% if not topics %}
-      <li>нема доступних тестів. Завітайте пізніше.</li>
+      <li>Нема доступних тестів. Завітайте пізніше.</li>
       {% endif %}
-
     </ol>
     <div class="text-center">
-      <button class="btn btn-outline-dark py-3 px-4 rounded-pill" type="submit">Start your quiz</button>
+      <button class="btn btn-outline-dark py-3 px-4 rounded-pill" type="submit">Почати перевірку -></button>
     </div>
-    
   </div>
 </form>
-
-
-
-
-
-
-
 {% endblock %}

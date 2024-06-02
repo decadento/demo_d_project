@@ -82,20 +82,13 @@
   <meta charset="UTF-8">
   <title>Pass a specialized thematic knowledge test</title>
   <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-  
-  
-
-
-
 <form id="topic-container" hx-post="{% url 'get-questions_eng' %}/start">
   {% csrf_token %}
   <h2 id="heading-text">
     What would you like to learn about?
   </h2>
   <div id="topic-list">
-
     <p>Please pick a topic from the below topics</p>
-
     <ol style="list-style-type: none;">
 
       {% for topic in topics %}
@@ -110,7 +103,7 @@
       {% endif %}
 
     </ol>
-    <button class="btn btn-outline-dark py-3 px-4 rounded-pill" type="submit">Start your quiz</button>
+    <button class="btn btn-outline-dark py-3 px-4 rounded-pill" type="submit">Start your quiz -></button>
     
   </div>
 </form>

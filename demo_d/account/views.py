@@ -70,11 +70,8 @@ def user_signup(request):
             username = form.cleaned_data['username']
             password1 = form.cleaned_data['password1']
             password2 = form.cleaned_data['password2']
-            
-            # Check the uniqueness of the username
             if User.objects.filter(username=username).exists():
                 form.add_error('username', 'Цей нікнейм вже зайнятий. Спробуйте інший.')
-            # Check if passwords match
             elif password1 != password2:
                 form.add_error('password2', 'Паролі не співпадають.')
             else:
@@ -82,8 +79,7 @@ def user_signup(request):
                 messages.success(request, 'Ви успішно зареєструвалися. Тепер увійдіть у свій акаунт.')
                 return redirect('login')
     else:
-        form = UserCreationForm()
-    
+        form = UserCreationForm()   
     return render(request, 'account/signup.html', {'form': form})
 
 
