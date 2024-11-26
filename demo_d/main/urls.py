@@ -7,7 +7,5 @@ urlpatterns = [
     path('learn', views.learn, name='learn'),
     path('learn_eng', views.learn_eng, name='learn_eng'),
     path('categories', views.categories, name='categories'),
-    path('categories_eng', views.categories_eng, name='categories_eng'),
-    
-    
+    path('categories_eng', views.categories_eng, name='categories_eng'),   
 ]
